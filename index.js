@@ -1,6 +1,8 @@
 const express = require('express')
 const morgan = require('morgan')
 const uuid = require('uuid')
+const serverless = require('serverless-http');
+
 const port = 3000
 morgan.token('id', (req) => { //creating id token
     return req.id
@@ -48,6 +50,6 @@ app.get('/us/david-safanyuk-and-eunike-olivia-sep-2023*', function (req, res) {
     res.redirect(301, req.path.replace('/us/david-safanyuk-and-eunike-olivia-sep-2023', ''));
 });
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-});
+
+module.exports = app;
+module.exports.handler = serverless(app);
