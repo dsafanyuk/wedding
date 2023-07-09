@@ -12,6 +12,13 @@ const router = Router();
 const app = express()
 app.use(assignId)
 app.use(morgan(':id :method :url :response-time'))
+const fs = require('fs');
+
+fs.readdir(`../../${__dirname}`, (err, files) => {
+  files.forEach(file => {
+    console.log(file);
+  });
+});
 function assignId(req, res, next) {
     const id = uuid.v4()
     req.id = id
@@ -21,7 +28,7 @@ router.get('/', function (req, res) {
     res.sendFile(__dirname + '/home.html');
 });
 router.get('/our-story', function (req, res) {
-    res.sendFile(__dirname + '/our-story.html');
+    res.sendFile(`../../${__dirname}/our-story.html`);
 });
 
 router.get('/q-a', function (req, res) {
