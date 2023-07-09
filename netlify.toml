@@ -1,9 +1,11 @@
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-  directory = "./.netlify/functions/"
-[[redirects]]
-  force = true
-  from = "/"
-  status = 200
-  to = "/.netlify/functions/express/:splat"
+  directory = "functions/express"
+
+[build]
+  command = "echo building"
+[dev]
+  framework = "#custom"
+  command = "echo dev"
+  targetPort = 8888
