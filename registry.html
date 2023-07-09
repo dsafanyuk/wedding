@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    window.onload = function () {
+      var element = document.querySelector('.css-1w5t0sx');
+      if (element) {
+        element.parentNode.removeChild(element);
+      }
+      var icon = document.querySelector("link[rel*='icon']");
+      if (icon) {
+        icon.href = "./icons8-romance-32.png"
+      }
+      // change title
+      document.title = "David Safanyuk and Eunike Olivia's Wedding";
+      // change head meta og url tag
+      document.head.querySelector("meta[property='og:url']").content = "https://davidandeunike.wedding/our-story";
+      document.head.querySelector("meta[property='og:title']").content = "David And Eunike's Story";
+      document.head.querySelector("meta[property='og:description']").content = "David And Eunike's Story";
+      // document.head.querySelector("meta[property='og:image']").content = "https//www.theknot.com/tk-media/images/4f1c68e6-e991-4797-9700-d71b79e7cd13~rt_0-cr_0.180.6000.3180?compress=true";
+      // Select the target element
+
+    }
+    // change anchor tag that has an href equal to /us/david-safanyuk-and-eunike-olivia-sep-2023/photos
+    // document.querySelector("a[href='/photos']").href = "./photos.html";
+    // Function to handle the mutation
+    function handleMutation(mutationsList, observer) {
+      for (let mutation of mutationsList) {
+        console.log(mutation)
+        if (mutation.type === 'childList') {
+          // Check if the target element is added or removed
+          if (mutation.addedNodes.length > 0) {
+            // Iterate over the added nodes
+            mutation.addedNodes.forEach(node => {
+              console.log(node)
+              if (node.matches('[data-testid="guest-cash-fund-gift-it-btn"]')) {
+                // Element is added, modify the href attribute
+                node.href = 'NEW_HREF_VALUE';
+              }
+            });
+          } else if (mutation.removedNodes.length > 0) {
+            // Iterate over the removed nodes
+            mutation.removedNodes.forEach(node => {
+              if (node.matches('[data-testid="guest-cash-fund-gift-it-btn"]')) {
+                // Element is removed
+                // Perform any necessary actions
+              }
+            });
+          }
+        }
+      }
+    }
+
+
+
+  </script>
+  <meta name="viewport" content="width=device-width" />
+  <meta charSet="utf-8" />
+  <title>David safanyuk and Eunike Olivia&#x27;s Wedding</title>
+  <meta name="description"
+    content="Welcome to david safanyuk and Eunike Olivia&#x27;s Wedding Website! View photos, directions, registry details and more." />
+  <link rel="canonical" href="https://DavidAndEunike.wedding" />
+  <meta name="googlebot" content="noindex,nofollow" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta property="og:url" content="https://DavidAndEunike.wedding" />
+  <meta property="og:title" content="David safanyuk and Eunike Olivia&#x27;s Wedding" />
+  <meta property="og:description"
+    content="Welcome to david safanyuk and Eunike Olivia&#x27;s Wedding Website! View photos, directions, registry details and more." />
+
+  <link type="image/png" sizes="32x32" rel="icon" href="./icons8-romance-32.png">
+  <meta name="theme-color" content="#231f20" />
+  <meta name="next-head-count" content="17" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+
+  <script async src="https://union.theknot.com/dist/v2/pagelet/latest/browser-modules.js"
+    id="union-pagelet-browser-modules-script"></script>
+  <script>!function () { var n = []; document.getElementById("union-pagelet-browser-modules-script").addEventListener("load", function () { n.forEach(function (n) { var e = n[0], i = n[1]; this[e].apply(this, i) }, window.UNION_INTERNAL_MODULE_SYSTEM), UNION_INTERNAL_MODULE_SYSTEM.requirejs.config({ waitSeconds: 15 }) }), window.UNION_INTERNAL_MODULE_SYSTEM = window.UNION_INTERNAL_MODULE_SYSTEM || { require: function () { n.push(["require", arguments]) }, define: function () { n.push(["define", arguments]) } } }()</script>
+  <style>
+    [data-pagelet-render-state=error]~[data-pagelet-role=placeholder],
+    [data-pagelet-render-state=ready]~[data-pagelet-role=placeholder] {
+      display: none
+    }
+  </style>
+      <!-- fragment start Union__fragment__html-document-parts_head --><!--#include virtual="/union-dist/html-document-parts/latest/server/head.html" --><!-- fragment end -->
+
+  <script class="ot-sdk-show-settings"
+    id="Union__consent-management__snippet">window.UnionConsentManagement = function () { var n = -1 === document.cookie.indexOf("unionCmpEnabled=false"); if (n) { var e = document.createElement("script"); e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.type = "text/javascript", e.charset = "UTF-8", e.async = !0, e.setAttribute("data-domain-script", "98c04d9e-538c-47ab-9820-bad810dce441"), document.head.appendChild(e) } else window.OnetrustActiveGroups = ",C0001,C0002,C0003,C0004,C0005,", window.OneTrust = { ToggleInfoDisplay: function () { }, OnConsentChanged: function () { } }; var o = "Necessary", i = "Analytic", r = "Personalisation", a = "Targeting", c = "Social", s = { C0001: o, C0002: i, C0003: r, C0004: a, C0005: c }, t = "not_loaded", d = !1, u = [], f = { "provider-load": [] }, l = {}; function g(n) { var e = C.getConsentedCategories(), t = Object.keys(s).map(function (n) { return s[n] }); n.setup({ consentedToAll: t.every(function (n) { return 0 <= e.indexOf(n) }), consentedToAny: t.filter(function (n) { return n !== o }).some(function (n) { return 0 <= e.indexOf(n) }), consentedToNecessary: 0 <= e.indexOf(o), consentedToAnalytic: 0 <= e.indexOf(i), consentedToPersonalisation: 0 <= e.indexOf(r), consentedToTargeting: 0 <= e.indexOf(a), consentedToSocial: 0 <= e.indexOf(c), consentedTo: function () { return Array.prototype.slice.call(arguments).every(function (n) { return 0 <= e.indexOf(n) }) }, categories: e }) } function p(n, e) { if (n === o || d && C.consentedTo(n)) return e(); l[n].push(e) } l[o] = [], l[i] = [], l[r] = [], l[a] = [], l[c] = []; var C = { version: "1.0.1", consentPlatformEnabled: n, registerService: function (n) { d && g(n), u.push(n) }, getConsentedCategories: function () { return (window.OnetrustActiveGroups || ",C0001,").split(",").filter(function (n) { return n && s[n] }).map(function (n) { return s[n] }) }, togglePreferencesModal: function () { t = "changing", OneTrust.ToggleInfoDisplay(), OneTrust.OnConsentChanged(function () { window.location.reload() }) }, addEventListener: function (n, e) { "provider-load" === n && ("provider-load" === n && d ? e() : f[n].push(e)) }, removeEventListener: function (n, e) { "provider-load" === n && f[n].splice(f[n].indexOf(e), 1) }, getCookieSettingsButtonText: function () { return OneTrust.GetDomainData().CookieSettingButtonText }, consentedTo: function (n) { return 0 <= C.getConsentedCategories().indexOf(n) }, onConsentedToNecessary: function (n) { return p(o, n) }, onConsentedToAnalytic: function (n) { return p(i, n) }, onConsentedToPersonalisation: function (n) { return p(r, n) }, onConsentedToTargeting: function (n) { return p(a, n) }, onConsentedToSocial: function (n) { return p(c, n) } }; return window.OptanonWrapper = function () { var n; d || (d = !0, f["provider-load"].forEach(function (n) { n() })), "loading" !== (t = "not_loaded" === (n = t) ? "loading" : "loading" === n ? "changing" : "done") && "changing" !== t || u.forEach(function (n) { g(n) }), C.getConsentedCategories().forEach(function (n) { l[n].forEach(function (n) { n() }), l[n] = [] }) }, n || window.OptanonWrapper(), C }()</script>
+  <script
+    type="text/javascript">!function () { var i = window.analytics = window.analytics || []; if (!i.initialize) if (i.invoked) window.console && console.error && console.error("Segment snippet included twice."); else { i.invoked = !0, i.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"], i.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); return e.unshift(t), i.push(e), i } }; for (var e = 0; e < i.methods.length; e++) { var t = i.methods[e]; i[t] = i.factory(t) } i.load = function (e, t) { var n = document.createElement("script"); n.type = "text/javascript", n.async = !0, n.src = "https://cdn.segment.com/analytics.js/v1/" + e + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a), i._loadOptions = t }, i._writeKey = "nibq354xak", i.SNIPPET_VERSION = "4.13.2" } }()</script>
+  <script id="Union__fragment_loader">
+    window.UNION_INTERNAL_FRAGMENT_LOADER = ((expirationPeriod, cacheNamespace, window, document, storage, JSON, Date) => {
+      const now = new Date;
+
+      const createCacheStorage = () => {
+        const getCacheKey = (fragment) => {
+          return cacheNamespace + fragment.name;
+        };
+
+        const usedKeys = new Set();
+        const unloadEvent = 'onpagehide' in window ? 'pagehide' : 'unload';
+        window.addEventListener(unloadEvent, () => {
+          Object.keys(storage).forEach((key) => {
+            if (key.indexOf(cacheNamespace) === 0 && !usedKeys.has(key)) {
+              storage.removeItem(key);
+              console.warn('Deleting fragment cache: ', key);
+            }
+          });
+        });
+
+        return {
+          set: (fragment, result) => {
+            try {
+              const key = getCacheKey(fragment);
+              usedKeys.add(key);
+              storage[key] = JSON.stringify([now, result]);
+            } catch (error) {
+              console.warn('Error hydrating fragment cache: ', error);
+            }
+          },
+          get: (fragment) => {
+            const key = getCacheKey(fragment)
+            usedKeys.add(key);
+            return storage[key];
+          }
+        }
+      }
+
+      const createHTMLFragmentLoader = () => {
+        const cacheStorage = createCacheStorage();
+
+        const performFetch = async (fragment) => {
+          const response = await fetch(fragment.url)
+          if (!response.ok) {
+            console.warn('Unable to fetch fragment', fragment);
+            return null;
+          }
+
+          return await response.text();
+        }
+
+        const performAppend = (fragment, targetElement, text) => {
+          const domFragment = document.createRange()
+            .createContextualFragment(
+              '<!-- fragment start ' + fragment.id + '-->' + text + '<!-- fragment end -->'
+            );
+          domFragment.firstChild.id = fragment.id;
+          targetElement.appendChild(domFragment);
+        }
+
+        const append = (fragment, text) => {
+          let target = fragment.options.target;
+
+          if (target !== 'head' && target !== 'body') {
+            target = 'body';
+          }
+
+          const targetElement = document[target];
+
+          if (target === 'body' && !targetElement) {
+            document.addEventListener('readystatechange', function () {
+
+              if (document.readyState === 'interactive')
+                performAppend(fragment, document.body, text);
+            });
+            return;
+          }
+
+          performAppend(fragment, targetElement, text);
+        }
+
+        const fetchAppend = async (fragment) => {
+          const text = await performFetch(fragment)
+          if (text) {
+            append(fragment, text);
+          }
+          return text;
+        }
+
+        const fetchAppendCache = async (fragment) => {
+          const text = await fetchAppend(fragment)
+          if (text)
+            cacheStorage.set(fragment, text);
+        }
+
+        const fetchCache = async (fragment) => {
+          const text = await performFetch(fragment)
+          if (text)
+            cacheStorage.set(fragment, text);
+        }
+
+        return {
+          load: async (fragment) => {
+            if (document.getElementById(fragment.id)) {
+              console.log(fragment.id + ': Fragment is already in document. Avoiding load cycle.');
+              return;
+            }
+
+            if (!fragment.options.cache) {
+              return fetchAppend(fragment);
+            }
+
+            const cache = cacheStorage.get(fragment);
+
+            if (!cache) {
+              return fetchAppendCache(fragment);
+            }
+
+            const data = JSON.parse(cache);
+            const lastUsed = new Date(data[0]);
+
+            if (lastUsed > now /* Probably an attacker */) {
+              return fetchAppendCache(fragment);
+            }
+
+            append(fragment, data[1]);
+
+            setTimeout(() => {
+              const timeSinceLastUsed = now - lastUsed;
+
+              if (timeSinceLastUsed >= expirationPeriod) {
+                fetchCache(fragment);
+              }
+            });
+          }
+        }
+      }
+
+      return createHTMLFragmentLoader();
+    })(
+      600000,
+      'xou/fragments/',
+      window,
+      document,
+      window.localStorage,
+      JSON,
+      Date
+    );
+  </script>
+  <link rel="preload" href="https://static.theknot.com/wws-guest-view/_next/static/css/30498a168aaec04a.css"
+    as="style" />
+  <link rel="stylesheet" href="https://static.theknot.com/wws-guest-view/_next/static/css/30498a168aaec04a.css"
+    data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule=""
+    src="https://static.theknot.com/wws-guest-view/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/webpack-85a808646c909abe.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/framework-a87821de553db91d.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/main-7164f7df19381639.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/pages/_app-9b4947cd2229f328.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/567-32d6ed001b6aff28.js" defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/789-efa364e57eb75f2e.js" defer=""></script>
+  <script
+    src="https://static.theknot.com/wws-guest-view/_next/static/chunks/pages/%5BpathPrefix%5D/%5Bslug%5D/%5B%5B...route%5D%5D-801c886c51d78bdc.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_buildManifest.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_ssgManifest.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_middlewareManifest.js"
+    defer=""></script>
+
+</head>
+
+<body>
+  <div id="__next">
+   
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">{
+    "props": {
+        "pageProps": {},
+        "apolloState": {
+            "GDS_GuestWedding:5b8b39be-e25b-43d6-bab7-426f4cc6b0e7": {
+                "__typename": "GDS_GuestWedding",
+                "id": "5b8b39be-e25b-43d6-bab7-426f4cc6b0e7",
+                "isPrivateRsvp": true,
+                "rsvpAsAPage": false,
+                "rsvpPageHidden": false
+            },
+            "GDS_SubEvent:c571256b-58e3-45fb-8181-56eb4a287844": {
+                "__typename": "GDS_SubEvent",
+                "attire": "Formal Or Semi Formal",
+                "endTime": "17:00",
+                "id": "c571256b-58e3-45fb-8181-56eb4a287844",
+                "name": "Ceremony",
+                "notes": null,
+                "time": "16:00",
+                "type": "Ceremony",
+                "visible": true,
+                "location": {
+                    "__typename": "GDS_Location",
+                    "fullAddress": "Jalan Jendral sudirman kav 52-53, Daerah Khusus Ibukota Jakarta, 12190, Indonesia",
+                    "name": "The Ritz-Carlton Jakarta, Pacific Place"
+                }
+            },
+            "GDS_SubEvent:430f3331-a307-4650-8e67-e7bcaf897f93": {
+                "__typename": "GDS_SubEvent",
+                "attire": "Formal / Semi Formal",
+                "endTime": "22:00",
+                "id": "430f3331-a307-4650-8e67-e7bcaf897f93",
+                "name": "Reception",
+                "notes": null,
+                "time": "19:00",
+                "type": "Reception",
+                "visible": true,
+                "location": {
+                    "__typename": "GDS_Location",
+                    "fullAddress": "Jalan Jendral sudirman kav 52-53, Daerah Khusus Ibukota Jakarta, 12190, Indonesia",
+                    "name": "The Ritz-Carlton Jakarta, Pacific Place"
+                }
+            },
+            "GDS_Event:148f6de2-c274-468f-ae91-5c34704f51f6": {
+                "__typename": "GDS_Event",
+                "id": "148f6de2-c274-468f-ae91-5c34704f51f6",
+                "attire": "Formal/ Semi Formal",
+                "endTime": null,
+                "name": "Wedding Day (JKT)",
+                "notes": null,
+                "time": null,
+                "type": "WeddingDay",
+                "visible": true,
+                "date": "2023-09-29",
+                "requireRsvp": true,
+                "sameVenue": null,
+                "location": {
+                    "__typename": "GDS_Location",
+                    "fullAddress": "Jalan Jendral sudirman kav 52-53, Daerah Khusus Ibukota Jakarta, 12190, Indonesia",
+                    "name": "The Ritz-Carlton Jakarta, Pacific Place"
+                },
+                "subEvents": [
+                    {
+                        "__ref": "GDS_SubEvent:c571256b-58e3-45fb-8181-56eb4a287844"
+                    },
+                    {
+                        "__ref": "GDS_SubEvent:430f3331-a307-4650-8e67-e7bcaf897f93"
+                    }
+                ]
+            },
+            "GDS_Event:809edd7c-89b5-4937-bc0e-a743ab128602": {
+                "__typename": "GDS_Event",
+                "id": "809edd7c-89b5-4937-bc0e-a743ab128602",
+                "attire": null,
+                "endTime": null,
+                "name": "Wedding Day (SEA)",
+                "notes": null,
+                "time": null,
+                "type": "WeddingEvent",
+                "visible": false,
+                "date": "2023-11-30",
+                "requireRsvp": false,
+                "sameVenue": null,
+                "location": null,
+                "subEvents": null
+            },
+            "WWS_Theme:1704": {
+                "__typename": "WWS_Theme",
+                "id": 1704,
+                "name": "Love Love by Vera Wang - Black",
+                "themeStyles": [
+                    {
+                        "id": 1073,
+                        "created_at": "2022-05-17T22:24:14.959Z",
+                        "updated_at": "2022-05-17T22:24:14.959Z",
+                        "styles": {
+                            "config": {
+                                "headerOnHero": false,
+                                "nameSeparator": "+",
+                                "coupleInfo": {
+                                    "coverPhotoId": "c86b8447-6778-47c4-b2da-c52c8a9619db",
+                                    "firstName": "Constance",
+                                    "fianceFirstName": "Sebastian",
+                                    "weddingDate": "August 15, 2026",
+                                    "weddingLocation": "Austin, TX"
+                                }
+                            },
+                            "images": {
+                                "top": "https://media-api.xogrp.com/images/04638a8f-8fb6-4a33-b57a-f93c45300494"
+                            },
+                            "responsiveImages": {
+                                "top": {
+                                    "smUrl": "https://media-api.xogrp.com/images/e2418f96-9442-4ec8-8ec9-0abc8c590e11"
+                                }
+                            },
+                            "colors": {
+                                "background": "#231f20",
+                                "primary": "#FFFFFF",
+                                "primaryHover": "#FFFFFF",
+                                "primaryDisabled": "#FFFFFF"
+                            },
+                            "fonts": {
+                                "s1": {
+                                    "fontFamily": "EB Garamond",
+                                    "color": "#FFFFFF",
+                                    "fontSize": "48px",
+                                    "fontWeight": "400",
+                                    "textTransform": "uppercase",
+                                    "letterSpacing": "8px"
+                                },
+                                "s2": {
+                                    "fontFamily": "EB Garamond",
+                                    "color": "#FFFFFF",
+                                    "fontSize": "38px",
+                                    "fontWeight": "normal",
+                                    "letterSpacing": "3px",
+                                    "textTransform": "uppercase"
+                                },
+                                "s3": {
+                                    "fontFamily": "EB Garamond",
+                                    "color": "#FFFFFF",
+                                    "fontSize": "32px",
+                                    "fontWeight": "normal",
+                                    "textTransform": "uppercase",
+                                    "letterSpacing": "4px"
+                                },
+                                "s4": {
+                                    "fontFamily": "EB Garamond",
+                                    "letterSpacing": "3px",
+                                    "color": "#FFFFFF",
+                                    "fontSize": "22px",
+                                    "fontWeight": "500",
+                                    "textTransform": "uppercase",
+                                    "@media(max-width: 640px)": {
+                                        "font-size": "calc(22px * 0.9)"
+                                    }
+                                },
+                                "s5": {
+                                    "fontFamily": "EB Garamond",
+                                    "letterSpacing": "3px",
+                                    "color": "#FFFFFF",
+                                    "fontSize": "20px",
+                                    "fontWeight": "500",
+                                    "textTransform": "uppercase",
+                                    "lineHeight": "22px",
+                                    "@media(max-width: 640px)": {
+                                        "font-size": "calc(20px * 0.9)"
+                                    }
+                                },
+                                "s6": {
+                                    "fontFamily": "EB Garamond",
+                                    "letterSpacing": "1px",
+                                    "color": "#FFFFFF",
+                                    "fontSize": "17px",
+                                    "fontWeight": "500",
+                                    "@media(max-width: 640px)": {
+                                        "font-size": "calc(18px * 0.9)"
+                                    }
+                                },
+                                "tiny": {
+                                    "fontFamily": "EB Garamond",
+                                    "letterSpacing": "0px",
+                                    "color": "#FFFFFF",
+                                    "fontSize": "15px",
+                                    "fontWeight": "400"
+                                },
+                                "title": {},
+                                "dateLocation": {},
+                                "nav": {},
+                                "sectionTitle": {},
+                                "itemTitle": {},
+                                "body": {},
+                                "bodyStrong": {}
+                            },
+                            "components": {
+                                "Button": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "color": "#231f20",
+                                    "textTransform": "uppercase",
+                                    "letterSpacing": "2px",
+                                    "fontWeight": "700 !important"
+                                },
+                                "ButtonHover": {
+                                    "backgroundColor": "#cccccc",
+                                    "color": "#231f20"
+                                },
+                                "SiteTitle": {
+                                    "paddingTop": "260px",
+                                    "paddingBottom": "10px",
+                                    "@media(max-width: 1280px)": {
+                                        "paddingTop": "250px"
+                                    },
+                                    "@media(max-width: 1024px)": {
+                                        "paddingTop": "190px"
+                                    },
+                                    "@media(max-width: 768px)": {
+                                        "paddingTop": "180px"
+                                    },
+                                    "@media(max-width: 600px)": {
+                                        "paddingTop": "150px"
+                                    },
+                                    "@media(max-width: 500px)": {
+                                        "paddingTop": "112px"
+                                    },
+                                    "@media(max-width: 420px)": {
+                                        "paddingTop": "80px"
+                                    },
+                                    "@media(max-width: 375px)": {
+                                        "paddingTop": "60px"
+                                    }
+                                },
+                                "TopImage": {
+                                    "max-width": "1280px",
+                                    "@media(max-width: 768px)": {
+                                        "max-width": "475px"
+                                    }
+                                },
+                                "Hero": {
+                                    "@media(min-width: 768px)": {
+                                        "paddingLeft": "20px",
+                                        "paddingRight": "20px",
+                                        "maxWidth": "1200px"
+                                    }
+                                },
+                                "Page": {
+                                    "@media(min-width: 768px)": {
+                                        "padding-top": ""
+                                    }
+                                },
+                                "Nav": {
+                                    "Desktop": {
+                                        "margin-top": "25px"
+                                    }
+                                },
+                                "Card": {}
+                            },
+                            "email": {
+                                "colors": {
+                                    "background": "#FFFFFF",
+                                    "color": "#231f20"
+                                },
+                                "images": {
+                                    "top": "https://media-api.xogrp.com/images/53e14c12-769e-4001-a3c0-b05325ce2fa1"
+                                },
+                                "components": {
+                                    "Card": {
+                                        "backgroundColor": "#231f20",
+                                        "borderColor": "#FFFFFF"
+                                    },
+                                    "Button": {
+                                        "backgroundColor": "#FFFFFF",
+                                        "color": "#231f20",
+                                        "fontFamily": "Cambria, Times, Times New Roman",
+                                        "borderRadius": "4px",
+                                        "fontSize": "16px"
+                                    },
+                                    "Subject": {
+                                        "fontFamily": "Cambria, Times, Times New Roman",
+                                        "color": "#FFFFFF",
+                                        "fontSize": "23px"
+                                    },
+                                    "BodyText": {
+                                        "fontFamily": "Cambria, Times, Times New Roman",
+                                        "color": "#FFFFFF",
+                                        "paddingLeft": "50px",
+                                        "paddingRight": "50px",
+                                        "paddingTop": "8px"
+                                    },
+                                    "FooterText": {
+                                        "fontFamily": "Cambria, Times, Times New Roman",
+                                        "color": "#231f20",
+                                        "fontWeight": "lighter"
+                                    }
+                                }
+                            },
+                            "lockups": {
+                                "Name": {
+                                    "customFont": "@font-face { font-family: 'EBGaramond-Medium'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://static.theknot.com/wws-guest-view-fonts/EBGaramond-Medium.ttf) format('truetype'); unicode-range: U+?????; }",
+                                    "container": {
+                                        "minWidth": "300px",
+                                        "paddingBottom": "5px",
+                                        "paddingTop": "5px"
+                                    },
+                                    "nameBase": {
+                                        "color": "#FFFFFF",
+                                        "fontFamily": "EBGaramond-Medium",
+                                        "textTransform": "uppercase",
+                                        "letterSpacing": ".15em",
+                                        "fontSize": "1.9rem",
+                                        "lineHeight": "1em"
+                                    },
+                                    "firstName": {
+                                        "width": "100%",
+                                        "textAlign": "center"
+                                    },
+                                    "fianceFirstName": {
+                                        "display": "inline-block",
+                                        "marginLeft": "0",
+                                        "minWidth": "auto",
+                                        "textAlign": "center"
+                                    },
+                                    "amp": {
+                                        "color": "#FFFFFF",
+                                        "display": "inline-block",
+                                        "background": " url(https://media-api.xogrp.com/images/7edaeda4-efcf-4ceb-ab62-8e1260b6b3ca) no-repeat center bottom",
+                                        "backgroundSize": "auto 40%",
+                                        "height": "0.9em",
+                                        "width": "1.2em",
+                                        "margin-bottom": "5px"
+                                    }
+                                },
+                                "DateLocation": {
+                                    "customFont": "@font-face { font-family: 'EBGaramond-Medium'; font-style: normal; font-weight: 400; font-display: swap; src: url(https://static.theknot.com/wws-guest-view-fonts/EBGaramond-Medium.ttf) format('truetype'); unicode-range: U+?????; }",
+                                    "date": {
+                                        "color": "#FFFFFF",
+                                        "fontFamily": "EBGaramond-Medium",
+                                        "letterSpacing": ".1em",
+                                        "textTransform": "uppercase",
+                                        "fontSize": "1.1rem",
+                                        "lineHeight": "1.4rem"
+                                    },
+                                    "location": {
+                                        "color": "#FFFFFF",
+                                        "fontFamily": "EBGaramond-Medium",
+                                        "letterSpacing": ".1em",
+                                        "textTransform": "uppercase",
+                                        "fontSize": "1.1rem",
+                                        "lineHeight": "1.4rem"
+                                    }
+                                }
+                            },
+                            "RSVP": {
+                                "images": {
+                                    "top": "https://media-api.xogrp.com/images/04638a8f-8fb6-4a33-b57a-f93c45300494"
+                                },
+                                "responsiveImages": {
+                                    "top": {
+                                        "smUrl": "https://media-api.xogrp.com/images/e2418f96-9442-4ec8-8ec9-0abc8c590e11"
+                                    }
+                                },
+                                "colors": {
+                                    "background": "#231f20",
+                                    "primary": "#FFFFFF",
+                                    "primaryHover": "#FFFFFF",
+                                    "primaryDisabled": "#FFFFFF"
+                                },
+                                "fonts": {
+                                    "s1": {
+                                        "fontFamily": "EB Garamond",
+                                        "color": "#FFFFFF",
+                                        "fontSize": "52px",
+                                        "fontWeight": "normal",
+                                        "textTransform": "uppercase",
+                                        "letterSpacing": "3px"
+                                    },
+                                    "s2": {
+                                        "fontFamily": "EB Garamond",
+                                        "color": "#FFFFFF",
+                                        "fontSize": "38px",
+                                        "fontWeight": "normal",
+                                        "letterSpacing": "0px",
+                                        "textTransform": "uppercase"
+                                    },
+                                    "s3": {
+                                        "fontFamily": "EB Garamond",
+                                        "color": "#FFFFFF",
+                                        "fontSize": "30px",
+                                        "fontWeight": "normal",
+                                        "textTransform": "none"
+                                    },
+                                    "s4": {
+                                        "fontFamily": "EB Garamond",
+                                        "letterSpacing": "2px",
+                                        "color": "#FFFFFF",
+                                        "fontSize": "21px",
+                                        "fontWeight": "600",
+                                        "textTransform": "uppercase"
+                                    },
+                                    "s5": {
+                                        "fontFamily": "EB Garamond",
+                                        "letterSpacing": "2px",
+                                        "color": "#FFFFFF",
+                                        "fontSize": "21px",
+                                        "fontWeight": "600",
+                                        "textTransform": "uppercase"
+                                    },
+                                    "s6": {
+                                        "fontFamily": "EB Garamond",
+                                        "letterSpacing": "1px",
+                                        "color": "#FFFFFF",
+                                        "fontSize": "18px",
+                                        "fontWeight": "500",
+                                        "fontStyle": "normal"
+                                    },
+                                    "tiny": {
+                                        "fontFamily": "EB Garamond",
+                                        "letterSpacing": "0px",
+                                        "color": "#FFFFFF",
+                                        "fontSize": "14px",
+                                        "fontWeight": "300"
+                                    },
+                                    "title": {},
+                                    "dateLocation": {},
+                                    "nav": {},
+                                    "sectionTitle": {},
+                                    "itemTitle": {},
+                                    "body": {},
+                                    "bodyStrong": {}
+                                },
+                                "components": {
+                                    "SiteTitle": {
+                                        "paddingTop": "240px",
+                                        "paddingBottom": "10px",
+                                        "@media(max-width: 1280px)": {
+                                            "paddingTop": "210px"
+                                        },
+                                        "@media(max-width: 1024px)": {
+                                            "paddingTop": "150px"
+                                        },
+                                        "@media(max-width: 768px)": {
+                                            "paddingTop": "150px"
+                                        },
+                                        "@media(max-width: 600px)": {
+                                            "paddingTop": "120px"
+                                        },
+                                        "@media(max-width: 500px)": {
+                                            "paddingTop": "100px"
+                                        },
+                                        "@media(max-width: 420px)": {
+                                            "paddingTop": "60px"
+                                        },
+                                        "@media(max-width: 375px)": {
+                                            "paddingTop": "40px"
+                                        }
+                                    },
+                                    "BackgroundImage": {},
+                                    "BottomImage": {},
+                                    "TopImage": {}
+                                }
+                            }
+                        },
+                        "theme_id": 1704
+                    }
+                ]
+            },
+            "WWS_StoryItem:102250401": {
+                "__typename": "WWS_StoryItem",
+                "id": 102250401,
+                "type": "StoryItem",
+                "rank": 0,
+                "title": "WITH LOVE",
+                "description": "\u003cp class=\"ql-align-center\"\u003eBy the grace of God, we are pleased to announce\u003c/p\u003e\u003cp class=\"ql-align-center\"\u003eour wedding to you, our family and friends.\u003c/p\u003e",
+                "photo": null
+            },
+            "WWS_EventGroupItem:96648574": {
+                "__typename": "WWS_EventGroupItem",
+                "id": 96648574,
+                "type": "EventGroupItem",
+                "rank": 1
+            },
+            "WWS_StoryItem:100149613": {
+                "__typename": "WWS_StoryItem",
+                "id": 100149613,
+                "type": "StoryItem",
+                "rank": 2,
+                "title": "Worth every mile between us",
+                "description": "\u003cp\u003e\u003cstrong\u003eDave and Eunike's lives intertwined when they met at Pensacola Christian College. What started as a friendship soon blossomed into a deep and meaningful connection. In 2018, they embarked on a romantic journey, discovering a love that would transcend time. Despite the challenges of a long-distance relationship that followed, Dave and Eunike persevered with unwavering commitment and a shared vision of their future together. The miles between them only fueled their love, as they navigated the complexities of distance with trust, open communication, and a firm belief in their love's strength. Their story is a testament to the power of love conquering all obstacles, proving that when two souls are destined to be together, no distance can keep them apart.\u003c/strong\u003e\u003c/p\u003e",
+                "photo": {
+                    "__typename": "WWS_Photo",
+                    "mediaUrl": "//www.theknot.com/tk-media/images/d48cbb63-f9f0-4075-ab21-46ad96759b59~cr_0.556.1875.1494?ordering=explicit",
+                    "mediaApiId": "d48cbb63-f9f0-4075-ab21-46ad96759b59",
+                    "width": 1875,
+                    "height": 938,
+                    "cropX": 0,
+                    "cropY": 556,
+                    "rotation": null,
+                    "aspectRatio": {
+                        "__typename": "WWS_AspectRatio",
+                        "name": "2:1",
+                        "value": 2
+                    }
+                }
+            },
+            "WWS_PhotoItem:101775573": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "One of our  First Date As a Couple!",
+                "date": "2018-02-21",
+                "height": 2500,
+                "id": 101775573,
+                "mediaApiId": "3feb615f-1727-406a-b1f4-27903e767911",
+                "mediaUrl": "https://media-api.xogrp.com/images/3feb615f-1727-406a-b1f4-27903e767911",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775574": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Keke threw Dave a surprise birthday party",
+                "date": "2018-02-22",
+                "height": 2500,
+                "id": 101775574,
+                "mediaApiId": "f4ae6c93-e736-428c-ae11-3b9020faaab9",
+                "mediaUrl": "https://media-api.xogrp.com/images/f4ae6c93-e736-428c-ae11-3b9020faaab9",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775576": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "A few days before Keke goes back to Indonesia ",
+                "date": "2021-03-21",
+                "height": 2500,
+                "id": 101775576,
+                "mediaApiId": "aced09e7-3141-4e36-ba8c-90fa72275b87",
+                "mediaUrl": "https://media-api.xogrp.com/images/aced09e7-3141-4e36-ba8c-90fa72275b87~rt_0-cr_0.0.1875.2500?ordering=explicit",
+                "width": 1875,
+                "rotation": 0
+            },
+            "WWS_PhotoItem:101775578": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Reuniting after almost a year apart in Seoul, South Korea",
+                "date": "2023-03-26",
+                "height": 1875,
+                "id": 101775578,
+                "mediaApiId": "0b9fdcba-d012-4847-82c7-c7204c10d22a",
+                "mediaUrl": "https://media-api.xogrp.com/images/0b9fdcba-d012-4847-82c7-c7204c10d22a",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775579": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Our favorite bento restaurant in Pensacola, FL",
+                "date": "2018-09-30",
+                "height": 2500,
+                "id": 101775579,
+                "mediaApiId": "f67066b1-6870-4a3e-9ae5-2268d887ac32",
+                "mediaUrl": "https://media-api.xogrp.com/images/f67066b1-6870-4a3e-9ae5-2268d887ac32",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775580": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Christmas Eve in Philadelphia",
+                "date": "2018-12-24",
+                "height": 2500,
+                "id": 101775580,
+                "mediaApiId": "76ae3163-b21c-46c5-b5a4-461ee067fb3c",
+                "mediaUrl": "https://media-api.xogrp.com/images/76ae3163-b21c-46c5-b5a4-461ee067fb3c",
+                "width": 1556,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775581": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Dave's first trip to Indonesia, where he discovered his one of favorite restaurant -Wing Heng. This place became a traditional spot to visit after arriving in Jakarta",
+                "date": "2022-06-17",
+                "height": 1875,
+                "id": 101775581,
+                "mediaApiId": "606049b1-bda4-4b8e-9a13-f1383ba9a135",
+                "mediaUrl": "https://media-api.xogrp.com/images/606049b1-bda4-4b8e-9a13-f1383ba9a135",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775582": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Exploring Bali with friends!",
+                "date": "2022-06-21",
+                "height": 2500,
+                "id": 101775582,
+                "mediaApiId": "ceb2f321-df71-4021-b32f-7da5eb74c003",
+                "mediaUrl": "https://media-api.xogrp.com/images/ceb2f321-df71-4021-b32f-7da5eb74c003",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775583": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Back to Jakarta for Prewedding photos :)",
+                "date": "2023-04-06",
+                "height": 1666,
+                "id": 101775583,
+                "mediaApiId": "34730080-8d03-4656-9c10-8c6860426b50",
+                "mediaUrl": "https://media-api.xogrp.com/images/34730080-8d03-4656-9c10-8c6860426b50",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775584": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Last but not least, our favorite shot in series.",
+                "date": "2023-04-06",
+                "height": 1666,
+                "id": 101775584,
+                "mediaApiId": "08215ad5-caca-4afc-842a-c6831e7369ff",
+                "mediaUrl": "https://media-api.xogrp.com/images/08215ad5-caca-4afc-842a-c6831e7369ff",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoItem:101775586": {
+                "__typename": "WWS_PhotoItem",
+                "caption": "Surprise Proposal :)",
+                "date": "2022-06-22",
+                "height": 2500,
+                "id": 101775586,
+                "mediaApiId": "f95d8265-984b-477a-9ce3-260332670bd2",
+                "mediaUrl": "https://media-api.xogrp.com/images/f95d8265-984b-477a-9ce3-260332670bd2",
+                "width": 1666,
+                "rotation": null
+            },
+            "WWS_PhotoTimelineItem:101775571": {
+                "__typename": "WWS_PhotoTimelineItem",
+                "id": 101775571,
+                "type": "PhotoTimelineItem",
+                "rank": 3,
+                "layout": "grid",
+                "photoItems": [
+                    {
+                        "__ref": "WWS_PhotoItem:101775573"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775574"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775576"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775578"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775579"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775580"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775581"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775582"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775583"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775584"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:101775586"
+                    }
+                ]
+            },
+            "WWS_Page:83235688": {
+                "__typename": "WWS_Page",
+                "id": 83235688,
+                "routeName": "",
+                "show": true,
+                "title": "Our Wedding",
+                "type": "WeddingPage",
+                "items": [
+                    {
+                        "__ref": "WWS_StoryItem:102250401"
+                    },
+                    {
+                        "__ref": "WWS_EventGroupItem:96648574"
+                    },
+                    {
+                        "__ref": "WWS_StoryItem:100149613"
+                    },
+                    {
+                        "__ref": "WWS_PhotoTimelineItem:101775571"
+                    }
+                ]
+            },
+            "WWS_PhotoItem:102537194": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537194,
+                "mediaApiId": "e701470b-21ca-4555-95bd-8c811cf61827",
+                "mediaUrl": "https://media-api.xogrp.com/images/e701470b-21ca-4555-95bd-8c811cf61827",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537195": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537195,
+                "mediaApiId": "a9884d15-3857-412e-9f8e-a3668f37dcd7",
+                "mediaUrl": "https://media-api.xogrp.com/images/a9884d15-3857-412e-9f8e-a3668f37dcd7",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537196": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537196,
+                "mediaApiId": "5792b883-28d1-4092-94a7-4ff5adf6d99b",
+                "mediaUrl": "https://media-api.xogrp.com/images/5792b883-28d1-4092-94a7-4ff5adf6d99b",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537197": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537197,
+                "mediaApiId": "0cf68e4f-4598-4354-b015-780bba57e975",
+                "mediaUrl": "https://media-api.xogrp.com/images/0cf68e4f-4598-4354-b015-780bba57e975",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537198": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537198,
+                "mediaApiId": "3dc19a20-f646-4398-bdfb-037227581d9e",
+                "mediaUrl": "https://media-api.xogrp.com/images/3dc19a20-f646-4398-bdfb-037227581d9e",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537199": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537199,
+                "mediaApiId": "9e1209ec-21d0-4ce1-96a9-7e94cd3d9898",
+                "mediaUrl": "https://media-api.xogrp.com/images/9e1209ec-21d0-4ce1-96a9-7e94cd3d9898",
+                "width": 1556,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537200": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-07-04",
+                "height": 2500,
+                "id": 102537200,
+                "mediaApiId": "9d78806c-8f86-44d8-a0ca-240c20f7a580",
+                "mediaUrl": "https://media-api.xogrp.com/images/9d78806c-8f86-44d8-a0ca-240c20f7a580",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537201": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 1666,
+                "id": 102537201,
+                "mediaApiId": "3bf47083-c189-42fa-a979-3e6ef48dfcd3",
+                "mediaUrl": "https://media-api.xogrp.com/images/3bf47083-c189-42fa-a979-3e6ef48dfcd3",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537202": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537202,
+                "mediaApiId": "926d066e-01f9-4bcf-81cf-5e4e0a323d10",
+                "mediaUrl": "https://media-api.xogrp.com/images/926d066e-01f9-4bcf-81cf-5e4e0a323d10",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537203": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537203,
+                "mediaApiId": "bdc9626b-d044-4a57-b187-fb0643809b19",
+                "mediaUrl": "https://media-api.xogrp.com/images/bdc9626b-d044-4a57-b187-fb0643809b19",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537204": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 1875,
+                "id": 102537204,
+                "mediaApiId": "46f1cce5-f381-414e-87ae-23c75efdf436",
+                "mediaUrl": "https://media-api.xogrp.com/images/46f1cce5-f381-414e-87ae-23c75efdf436",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537205": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537205,
+                "mediaApiId": "2ae1e5ca-6594-4d67-a611-d0a5c8e1a62e",
+                "mediaUrl": "https://media-api.xogrp.com/images/2ae1e5ca-6594-4d67-a611-d0a5c8e1a62e",
+                "width": 1875,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537206": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 2500,
+                "id": 102537206,
+                "mediaApiId": "4ee112cb-9d83-4a55-835f-795fd7cb9a73",
+                "mediaUrl": "https://media-api.xogrp.com/images/4ee112cb-9d83-4a55-835f-795fd7cb9a73",
+                "width": 1666,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537207": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 1875,
+                "id": 102537207,
+                "mediaApiId": "2f2015ac-cb8d-4662-8193-80750053fb3f",
+                "mediaUrl": "https://media-api.xogrp.com/images/2f2015ac-cb8d-4662-8193-80750053fb3f",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537208": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 1666,
+                "id": 102537208,
+                "mediaApiId": "22478690-3fc8-405e-9564-d53c452856c9",
+                "mediaUrl": "https://media-api.xogrp.com/images/22478690-3fc8-405e-9564-d53c452856c9",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoItem:102537209": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2023-06-27",
+                "height": 1666,
+                "id": 102537209,
+                "mediaApiId": "0817241d-ebe5-4513-98b2-3b6a1b55eac5",
+                "mediaUrl": "https://media-api.xogrp.com/images/0817241d-ebe5-4513-98b2-3b6a1b55eac5",
+                "width": 2500,
+                "rotation": null
+            },
+            "WWS_PhotoTimelineItem:102537193": {
+                "__typename": "WWS_PhotoTimelineItem",
+                "id": 102537193,
+                "type": "PhotoTimelineItem",
+                "rank": 1,
+                "layout": "grid",
+                "photoItems": [
+                    {
+                        "__ref": "WWS_PhotoItem:102537194"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537195"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537196"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537197"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537198"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537199"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537200"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537201"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537202"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537203"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537204"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537205"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537206"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537207"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537208"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:102537209"
+                    }
+                ]
+            },
+            "WWS_Page:83235689": {
+                "__typename": "WWS_Page",
+                "id": 83235689,
+                "routeName": "our-story",
+                "show": true,
+                "title": "Our Story",
+                "type": "StoryPage",
+                "items": [
+                    {
+                        "__ref": "WWS_PhotoTimelineItem:102537193"
+                    }
+                ]
+            },
+            "WWS_PhotoItem:100128619": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 2500,
+                "id": 100128619,
+                "mediaApiId": "b34085b8-14d8-4390-8940-f25ed81c047a",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/b34085b8-14d8-4390-8940-f25ed81c047a",
+                "width": 1666
+            },
+            "WWS_PhotoItem:100128620": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 1666,
+                "id": 100128620,
+                "mediaApiId": "dc0fe57b-7ddc-4372-8434-264bc6a8adc4",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/dc0fe57b-7ddc-4372-8434-264bc6a8adc4",
+                "width": 2500
+            },
+            "WWS_PhotoItem:100128621": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 2500,
+                "id": 100128621,
+                "mediaApiId": "18575c59-3c1d-40f7-a696-23c5c747760c",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/18575c59-3c1d-40f7-a696-23c5c747760c",
+                "width": 1666
+            },
+            "WWS_PhotoItem:100138126": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 1666,
+                "id": 100138126,
+                "mediaApiId": "c3a24a36-05d1-4f1b-9b39-0ca491bd8a1e",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/c3a24a36-05d1-4f1b-9b39-0ca491bd8a1e",
+                "width": 2500
+            },
+            "WWS_PhotoItem:100138127": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 2500,
+                "id": 100138127,
+                "mediaApiId": "8fe72ad0-7da2-41e6-a6bc-5cb14d6fc0f9",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/8fe72ad0-7da2-41e6-a6bc-5cb14d6fc0f9",
+                "width": 1666
+            },
+            "WWS_PhotoItem:100138128": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 2500,
+                "id": 100138128,
+                "mediaApiId": "da186ee1-9ed5-49f4-97bf-fcef8a4e8f4a",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/da186ee1-9ed5-49f4-97bf-fcef8a4e8f4a",
+                "width": 1666
+            },
+            "WWS_PhotoItem:100138129": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 2500,
+                "id": 100138129,
+                "mediaApiId": "c233d2d4-cbcc-468d-9c57-c747af25ecc9",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/c233d2d4-cbcc-468d-9c57-c747af25ecc9",
+                "width": 1666
+            },
+            "WWS_PhotoItem:100138130": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 2500,
+                "id": 100138130,
+                "mediaApiId": "144c7aa0-3875-4b53-a9c3-02ce26e9a640",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/144c7aa0-3875-4b53-a9c3-02ce26e9a640",
+                "width": 1666
+            },
+            "WWS_PhotoItem:100138131": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 2500,
+                "id": 100138131,
+                "mediaApiId": "7749ec55-6e1a-4d62-9db4-a668f30f4ad1",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/7749ec55-6e1a-4d62-9db4-a668f30f4ad1",
+                "width": 1666
+            },
+            "WWS_PhotoItem:100138132": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "height": 1666,
+                "id": 100138132,
+                "mediaApiId": "b69d3cc3-3016-447f-90d6-3ea2c8e2bd24",
+                "cropX": null,
+                "cropY": null,
+                "rotation": null,
+                "mediaUrl": "https://media-api.xogrp.com/images/b69d3cc3-3016-447f-90d6-3ea2c8e2bd24",
+                "width": 2500
+            },
+            "WWS_PhotoGalleryItem:100128618": {
+                "__typename": "WWS_PhotoGalleryItem",
+                "id": 100128618,
+                "type": "PhotoGalleryItem",
+                "rank": 1,
+                "layout": "grid",
+                "photoItems": [
+                    {
+                        "__ref": "WWS_PhotoItem:100128619"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100128620"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100128621"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100138126"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100138127"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100138128"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100138129"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100138130"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100138131"
+                    },
+                    {
+                        "__ref": "WWS_PhotoItem:100138132"
+                    }
+                ]
+            },
+            "WWS_Page:83235690": {
+                "__typename": "WWS_Page",
+                "id": 83235690,
+                "routeName": "photos",
+                "show": true,
+                "title": "Photos",
+                "type": "PhotoPage",
+                "items": [
+                    {
+                        "__ref": "WWS_PhotoGalleryItem:100128618"
+                    }
+                ]
+            },
+            "WWS_Page:83235691": {
+                "__typename": "WWS_Page",
+                "id": 83235691,
+                "routeName": "wedding-party",
+                "show": false,
+                "title": "Wedding Party",
+                "type": "WeddingPartyPage",
+                "items": []
+            },
+            "WWS_QuestionItem:101772816": {
+                "__typename": "WWS_QuestionItem",
+                "id": 101772816,
+                "type": "QuestionItem",
+                "rank": 0,
+                "question": "Wow! Indonesia is far, will you hate us if we can't make it?",
+                "answer": "Absolutely not! We totally understand if you cannot make the long flight to Indonesia! We are still considering a US wedding/reception once our immigration procedure is completed. We will keep you all updated. "
+            },
+            "WWS_QuestionItem:101773172": {
+                "__typename": "WWS_QuestionItem",
+                "id": 101773172,
+                "type": "QuestionItem",
+                "rank": 1,
+                "question": "How do we get to Indonesia?",
+                "answer": "Your best bet would be to fly to CGK (Jakarta airport code). You can take a boat or swim, but we do not recommend it and cannot be held accountable for any brave people who decide to take that route. "
+            },
+            "WWS_QuestionItem:101772939": {
+                "__typename": "WWS_QuestionItem",
+                "id": 101772939,
+                "type": "QuestionItem",
+                "rank": 2,
+                "question": "This will be our first time in Indonesia, what can we expect?",
+                "answer": "Welcome! If you are planning to come, please do us a favor and RSVP ASAP. We totally understand if this is short notice for some people and cannot make it. After you confirm your attendance, Dave can reach out to help make arrangements (Flights/hotels/transport)"
+            },
+            "WWS_QuestionItem:101773098": {
+                "__typename": "WWS_QuestionItem",
+                "id": 101773098,
+                "type": "QuestionItem",
+                "rank": 3,
+                "question": "Will there be any provided accommodations/transportation?",
+                "answer": "At this time, there will not be any provided accommodations. However, there are definitely hotels that can fit your budget/preferences.\n\nFor transportation, please reach out to us directly to help organize transportation to/from the airport (CGK airport code)"
+            },
+            "WWS_Page:83235692": {
+                "__typename": "WWS_Page",
+                "id": 83235692,
+                "routeName": "q-a",
+                "show": true,
+                "title": "Q + A",
+                "type": "QAPage",
+                "items": [
+                    {
+                        "__ref": "WWS_QuestionItem:101772816"
+                    },
+                    {
+                        "__ref": "WWS_QuestionItem:101773172"
+                    },
+                    {
+                        "__ref": "WWS_QuestionItem:101772939"
+                    },
+                    {
+                        "__ref": "WWS_QuestionItem:101773098"
+                    }
+                ]
+            },
+            "WWS_Page:83235693": {
+                "__typename": "WWS_Page",
+                "id": 83235693,
+                "routeName": "travel",
+                "show": false,
+                "title": "Travel",
+                "type": "TravelPage",
+                "items": []
+            },
+            "WWS_Page:83235694": {
+                "__typename": "WWS_Page",
+                "id": 83235694,
+                "routeName": "things-to-do",
+                "show": false,
+                "title": "Things to Do",
+                "type": "ThingsToDoPage",
+                "items": []
+            },
+            "WWS_Page:83235695": {
+                "__typename": "WWS_Page",
+                "id": 83235695,
+                "routeName": "registry",
+                "show": true,
+                "title": "Registry",
+                "type": "RegistryPage",
+                "items": []
+            },
+            "WWS_WeddingWebsiteV2:23028087": {
+                "__typename": "WWS_WeddingWebsiteV2",
+                "id": 23028087,
+                "theme({\"themeId\":null})": {
+                    "__ref": "WWS_Theme:1704"
+                },
+                "fianceFirstName": "Eunike",
+                "fianceLastName": "Olivia",
+                "firstName": "david",
+                "lastName": "safanyuk",
+                "hideCountdown": false,
+                "hideDate": false,
+                "registryNote": null,
+                "slug": "",
+                "userUuid": "d78127cc-0f99-40e0-afe9-de76daf48720",
+                "vanityRoot": "DavidAndEunike.wedding/",
+                "weddingLocation": "Jakarta, Indonesia",
+                "weddingDateFormat": "natural",
+                "searchEngineIndexable": false,
+                "weddingDateRangeStart": null,
+                "weddingDateRangeEnd": null,
+                "weddingUuid": "5b8b39be-e25b-43d6-bab7-426f4cc6b0e7",
+                "announcement": null,
+                "purchaseDomain": null,
+                "coverPhotoPathWithCropbox": "//www.theknot.com/tk-media/images/4f1c68e6-e991-4797-9700-d71b79e7cd13~rt_0-cr_0.180.6000.3180?compress=true",
+                "coverPhoto": {
+                    "__typename": "WWS_CoverPhoto",
+                    "path": "//www.theknot.com/tk-media/images/4f1c68e6-e991-4797-9700-d71b79e7cd13",
+                    "cropBox": "0.180.6000.3180",
+                    "width": 6000,
+                    "height": 3000
+                },
+                "photoAlbums": [],
+                "pages": [
+                    {
+                        "__ref": "WWS_Page:83235688"
+                    },
+                    {
+                        "__ref": "WWS_Page:83235689"
+                    },
+                    {
+                        "__ref": "WWS_Page:83235690"
+                    },
+                    {
+                        "__ref": "WWS_Page:83235691"
+                    },
+                    {
+                        "__ref": "WWS_Page:83235692"
+                    },
+                    {
+                        "__ref": "WWS_Page:83235693"
+                    },
+                    {
+                        "__ref": "WWS_Page:83235694"
+                    },
+                    {
+                        "__ref": "WWS_Page:83235695"
+                    }
+                ]
+            },
+            "ROOT_QUERY": {
+                "__typename": "Query",
+                "guestWedding": {
+                    "__ref": "GDS_GuestWedding:5b8b39be-e25b-43d6-bab7-426f4cc6b0e7"
+                },
+                "events": [
+                    {
+                        "__ref": "GDS_Event:148f6de2-c274-468f-ae91-5c34704f51f6"
+                    },
+                    {
+                        "__ref": "GDS_Event:809edd7c-89b5-4937-bc0e-a743ab128602"
+                    }
+                ],
+                "weddingWebsiteResult({\"pin\":null,\"slugOrVanity\":\"DavidAndEunike.wedding\"})": {
+                    "__ref": "WWS_WeddingWebsiteV2:23028087"
+                },
+                "wedding": {
+                    "__typename": "Wedding",
+                    "weddingDate": "2023-09-29",
+                    "season": {
+                        "__typename": "Season",
+                        "name": "Fall",
+                        "year": 2023
+                    }
+                },
+                "weddingDatePreferences({\"pin\":null})": {
+                    "__typename": "WeddingDatePreferences",
+                    "datePreference": "Exact",
+                    "season": "Fall",
+                    "year": 2023,
+                    "weddingDate": "2023-09-29",
+                    "weddingDateFormat": "natural",
+                    "weddingDateRangeStart": null,
+                    "weddingDateRangeEnd": null,
+                    "weddingEventTime": null,
+                    "hideCountdown": false,
+                    "hideDate": false
+                }
+            }
+        },
+        "apolloClient": null
+    },
+    "page": "/[pathPrefix]/[slug]/[[...route]]",
+    "query": {
+        "pathPrefix": "us",
+        "slug": "david-safanyuk-and-eunike-olivia-sep-2023",
+        "route": [
+            "registry"
+        ]
+    },
+    "buildId": "FOZNZh_9Vs-GZh8s7Ia_j",
+    "assetPrefix": "https://static.theknot.com/wws-guest-view",
+    "runtimeConfig": {
+        "headSnippet": {
+            "key": null,
+            "ref": null,
+            "props": {
+                "children": "\n\u003cscript\u003e\n console.log(\"hello\") \n\u003cscript\u003e\n"
+            },
+            "_owner": null
+        },
+        "bodySnippet": {
+            "key": null,
+            "ref": null,
+            "props": {
+            },
+            "_owner": null
+        }
+    },
+    "isFallback": true,
+    "customServer": true,
+    "gip": true,
+    "appGip": true,
+    "scriptLoader": []
+    }
+  </script>
+  <noscript><img
+      src="https://www.theknot.com/akam/13/pixel_4cb017e6?a=dD00ZDBmOWRlYzU5Y2EyNTcyMzBiYjc0ZDQyM2U2ZDMzNTkzMmNiMGMyJmpzPW9mZg=="
+      style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript>
+</body>
+
+</html>
+
+
