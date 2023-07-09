@@ -1,17 +1,63 @@
-[functions]
-  external_node_modules = ["express"]
-  node_bundler = "esbuild"
-  directory = "functions/express"
+# [functions]
+#   external_node_modules = ["express"]
+#   node_bundler = "esbuild"
+#   directory = "functions/express"
 
-[build]
-  command = "echo building"
-[dev]
-  framework = "#custom"
-  command = "sleep infinity"
-  targetPort = 8888
+# [build]
+#   command = "echo building"
+# [dev]
+#   framework = "#custom"
+#   command = "sleep infinity"
+#   targetPort = 8888
+
+# [[redirects]]
+#   force = true
+#   from = "/*"
+#   status = 200
+#   to = "/.netlify/functions/express/:splat"
 
 [[redirects]]
   force = true
-  from = "/*"
+  from = "/"
   status = 200
-  to = "/.netlify/functions/express/:splat"
+  to = "/home.html"
+[[redirects]]
+  force = true
+  from = "/our-story"
+  status = 200
+  to = "/our-story.html"
+
+[[redirects]]
+  force = true
+  from = "/q-a"
+  status = 200
+  to = "/qa.html"
+
+[[redirects]]
+  force = true
+  from = "/photos"
+  status = 200
+  to = "/photos.html"
+[[redirects]]
+  force = true
+  from = "/photos/*"
+  status = 200
+  to = "/photos.html"
+
+[[redirects]]
+  force = true
+  from = "/registry"
+  status = 301
+  to = "https://www.theknot.com/us/david-safanyuk-and-eunike-olivia-sep-2023/registry"
+
+[[redirects]]
+  force = true
+  from = "/rsvp"
+  status = 301
+  to = "https://www.theknot.com/us/david-safanyuk-and-eunike-olivia-sep-2023/rsvp"
+
+[[redirects]]
+  force = true
+  from = "/us/david-safanyuk-and-eunike-olivia-sep-2023/:slug"
+  status = 200
+  to = "/:slug"

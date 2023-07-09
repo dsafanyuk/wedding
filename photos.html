@@ -1,246 +1,261 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script>
-      window.onload = function() {
-        var element = document.querySelector('.css-1w5t0sx');
-        if (element) {
-          element.parentNode.removeChild(element);
-        }
-        document.querySelector("link[rel*='icon']").href = "./icons8-romance-32.png";
-        // change title
-        document.title = "David Safanyuk and Eunike Olivia's Wedding";
-        // change head meta og url tag
-        document.head.querySelector("meta[property='og:url']").content = "https://davidandeunike.wedding/our-story";
-        document.head.querySelector("meta[property='og:title']").content = "David And Eunike's Story";
-        document.head.querySelector("meta[property='og:description']").content = "David And Eunike's Story";
-        document.head.querySelector("meta[property='og:image']").content = "https//www.theknot.com/tk-media/images/4f1c68e6-e991-4797-9700-d71b79e7cd13~rt_0-cr_0.180.6000.3180?compress=true";
-        
-        // change anchor tag that has an href equal to /us/david-safanyuk-and-eunike-olivia-sep-2023/photos
-        // document.querySelector("a[href='/photos']").href = "./photos.html";
-  
-  
-      };
-    </script>
-    <meta name="viewport" content="width=device-width" />
-    <meta charSet="utf-8" />
-    <title>David safanyuk and Eunike Olivia&#x27;s Wedding</title>
-    <meta name="description"
-      content="Welcome to david safanyuk and Eunike Olivia&#x27;s Wedding Website! View photos, directions, registry details and more." />
-    <link rel="canonical" href="https://DavidAndEunike.wedding" />
-    <meta name="googlebot" content="noindex,nofollow" />
-    <meta name="robots" content="noindex,nofollow" />
-    <meta property="og:url" content="https://DavidAndEunike.wedding" />
-    <meta property="og:title" content="David safanyuk and Eunike Olivia&#x27;s Wedding" />
-    <meta property="og:description"
-      content="Welcome to david safanyuk and Eunike Olivia&#x27;s Wedding Website! View photos, directions, registry details and more." />
-  
-      <link type="image/png" sizes="32x32" rel="icon" href="./icons8-romance-32.png">  <meta name="theme-color" content="#231f20" />
-    <meta name="next-head-count" content="17" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-  
-  
-    <!-- <link rel="preload" as="script" href="https://union.theknot.com/dist/v2/tk-pagelet-header-nav/latest/main.js">
-    <link rel="preload" as="style" href="https://union.theknot.com/dist/v2/tk-pagelet-header-nav/latest/secondary.css"> -->
-  
-    <script async src="https://union.theknot.com/dist/v2/pagelet/latest/browser-modules.js"
-      id="union-pagelet-browser-modules-script"></script>
-    <script>!function () { var n = []; document.getElementById("union-pagelet-browser-modules-script").addEventListener("load", function () { n.forEach(function (n) { var e = n[0], i = n[1]; this[e].apply(this, i) }, window.UNION_INTERNAL_MODULE_SYSTEM), UNION_INTERNAL_MODULE_SYSTEM.requirejs.config({ waitSeconds: 15 }) }), window.UNION_INTERNAL_MODULE_SYSTEM = window.UNION_INTERNAL_MODULE_SYSTEM || { require: function () { n.push(["require", arguments]) }, define: function () { n.push(["define", arguments]) } } }()</script>
-    <style>
-      [data-pagelet-render-state=error]~[data-pagelet-role=placeholder],
-      [data-pagelet-render-state=ready]~[data-pagelet-role=placeholder] {
-        display: none
+
+<head>
+  <script>
+    window.onload = function () {
+      var element = document.querySelector('.css-1w5t0sx');
+      if (element) {
+        element.parentNode.removeChild(element);
       }
-    </style>
-    <script class="ot-sdk-show-settings"
-      id="Union__consent-management__snippet">window.UnionConsentManagement = function () { var n = -1 === document.cookie.indexOf("unionCmpEnabled=false"); if (n) { var e = document.createElement("script"); e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.type = "text/javascript", e.charset = "UTF-8", e.async = !0, e.setAttribute("data-domain-script", "98c04d9e-538c-47ab-9820-bad810dce441"), document.head.appendChild(e) } else window.OnetrustActiveGroups = ",C0001,C0002,C0003,C0004,C0005,", window.OneTrust = { ToggleInfoDisplay: function () { }, OnConsentChanged: function () { } }; var o = "Necessary", i = "Analytic", r = "Personalisation", a = "Targeting", c = "Social", s = { C0001: o, C0002: i, C0003: r, C0004: a, C0005: c }, t = "not_loaded", d = !1, u = [], f = { "provider-load": [] }, l = {}; function g(n) { var e = C.getConsentedCategories(), t = Object.keys(s).map(function (n) { return s[n] }); n.setup({ consentedToAll: t.every(function (n) { return 0 <= e.indexOf(n) }), consentedToAny: t.filter(function (n) { return n !== o }).some(function (n) { return 0 <= e.indexOf(n) }), consentedToNecessary: 0 <= e.indexOf(o), consentedToAnalytic: 0 <= e.indexOf(i), consentedToPersonalisation: 0 <= e.indexOf(r), consentedToTargeting: 0 <= e.indexOf(a), consentedToSocial: 0 <= e.indexOf(c), consentedTo: function () { return Array.prototype.slice.call(arguments).every(function (n) { return 0 <= e.indexOf(n) }) }, categories: e }) } function p(n, e) { if (n === o || d && C.consentedTo(n)) return e(); l[n].push(e) } l[o] = [], l[i] = [], l[r] = [], l[a] = [], l[c] = []; var C = { version: "1.0.1", consentPlatformEnabled: n, registerService: function (n) { d && g(n), u.push(n) }, getConsentedCategories: function () { return (window.OnetrustActiveGroups || ",C0001,").split(",").filter(function (n) { return n && s[n] }).map(function (n) { return s[n] }) }, togglePreferencesModal: function () { t = "changing", OneTrust.ToggleInfoDisplay(), OneTrust.OnConsentChanged(function () { window.location.reload() }) }, addEventListener: function (n, e) { "provider-load" === n && ("provider-load" === n && d ? e() : f[n].push(e)) }, removeEventListener: function (n, e) { "provider-load" === n && f[n].splice(f[n].indexOf(e), 1) }, getCookieSettingsButtonText: function () { return OneTrust.GetDomainData().CookieSettingButtonText }, consentedTo: function (n) { return 0 <= C.getConsentedCategories().indexOf(n) }, onConsentedToNecessary: function (n) { return p(o, n) }, onConsentedToAnalytic: function (n) { return p(i, n) }, onConsentedToPersonalisation: function (n) { return p(r, n) }, onConsentedToTargeting: function (n) { return p(a, n) }, onConsentedToSocial: function (n) { return p(c, n) } }; return window.OptanonWrapper = function () { var n; d || (d = !0, f["provider-load"].forEach(function (n) { n() })), "loading" !== (t = "not_loaded" === (n = t) ? "loading" : "loading" === n ? "changing" : "done") && "changing" !== t || u.forEach(function (n) { g(n) }), C.getConsentedCategories().forEach(function (n) { l[n].forEach(function (n) { n() }), l[n] = [] }) }, n || window.OptanonWrapper(), C }()</script>
-    <script
-      type="text/javascript">!function () { var i = window.analytics = window.analytics || []; if (!i.initialize) if (i.invoked) window.console && console.error && console.error("Segment snippet included twice."); else { i.invoked = !0, i.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"], i.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); return e.unshift(t), i.push(e), i } }; for (var e = 0; e < i.methods.length; e++) { var t = i.methods[e]; i[t] = i.factory(t) } i.load = function (e, t) { var n = document.createElement("script"); n.type = "text/javascript", n.async = !0, n.src = "https://cdn.segment.com/analytics.js/v1/" + e + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a), i._loadOptions = t }, i._writeKey = "nibq354xak", i.SNIPPET_VERSION = "4.13.2" } }()</script>
-    <script id="Union__fragment_loader">
-      window.UNION_INTERNAL_FRAGMENT_LOADER = ((expirationPeriod, cacheNamespace, window, document, storage, JSON, Date) => {
-        const now = new Date;
-        return
-  
-        const createCacheStorage = () => {
-          const getCacheKey = (fragment) => {
-            return cacheNamespace + fragment.name;
-          };
-  
-          const usedKeys = new Set();
-          const unloadEvent = 'onpagehide' in window ? 'pagehide' : 'unload';
-          window.addEventListener(unloadEvent, () => {
-            Object.keys(storage).forEach((key) => {
-              if (key.indexOf(cacheNamespace) === 0 && !usedKeys.has(key)) {
-                storage.removeItem(key);
-                console.warn('Deleting fragment cache: ', key);
-              }
-            });
-          });
-  
-          return {
-            set: (fragment, result) => {
-              try {
-                const key = getCacheKey(fragment);
-                usedKeys.add(key);
-                storage[key] = JSON.stringify([now, result]);
-              } catch (error) {
-                console.warn('Error hydrating fragment cache: ', error);
-              }
-            },
-            get: (fragment) => {
-              const key = getCacheKey(fragment)
-              usedKeys.add(key);
-              return storage[key];
+      document.querySelector("link[rel*='icon']").href = "./icons8-romance-32.png";
+      // change title
+      document.title = "David Safanyuk and Eunike Olivia's Wedding";
+      // change head meta og url tag
+      // console.log(document.head)
+      document.head.querySelector("meta[property='og:url']").content = "https://davidandeunike.wedding/our-story";
+      document.head.querySelector("meta[property='og:title']").content = "David And Eunike's Story";
+      document.head.querySelector("meta[property='og:description']").content = "David And Eunike's Story";
+      // // create meta element if it doesn't exist
+      // if (!document.head.querySelector("meta[property='og:image']")) {
+      //   var meta = document.createElement('meta');
+      //   meta.setAttribute('property', 'og:image');
+      //   document.head.appendChild(meta);
+      // }
+
+      document.head.querySelector("meta[property='og:image']").content = "https//www.theknot.com/tk-media/images/4f1c68e6-e991-4797-9700-d71b79e7cd13~rt_0-cr_0.180.6000.3180?compress=true";
+
+      // change anchor tag that has an href equal to /photos
+      // document.querySelector("a[href='/photos']").href = "./photos.html";
+      // Get the target element
+
+
+    };
+  </script>
+  <meta name="viewport" content="width=device-width" />
+  <meta charSet="utf-8" />
+  <title>David safanyuk and Eunike Olivia&#x27;s Wedding</title>
+  <meta name="description"
+    content="Welcome to david safanyuk and Eunike Olivia&#x27;s Wedding Website! View photos, directions, registry details and more." />
+  <link rel="canonical" href="https://DavidAndEunike.wedding" />
+  <meta name="googlebot" content="noindex,nofollow" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta property="og:url" content="https://DavidAndEunike.wedding" />
+  <meta property="og:title" content="David safanyuk and Eunike Olivia&#x27;s Wedding" />
+  <meta property="og:description"
+    content="Welcome to david safanyuk and Eunike Olivia&#x27;s Wedding Website! View photos, directions, registry details and more." />
+    <meta property="og:image"
+    content="https//www.theknot.com/tk-media/images/4f1c68e6-e991-4797-9700-d71b79e7cd13~rt_0-cr_0.180.6000.3180?compress=true" />
+  <link type="image/png" sizes="32x32" rel="icon" href="./icons8-romance-32.png">
+  <meta name="theme-color" content="#231f20" />
+  <meta name="next-head-count" content="17" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+
+  <!-- <link rel="preload" as="script" href="https://union.theknot.com/dist/v2/tk-pagelet-header-nav/latest/main.js">
+    <link rel="preload" as="style" href="https://union.theknot.com/dist/v2/tk-pagelet-header-nav/latest/secondary.css"> -->
+
+  <script async src="https://union.theknot.com/dist/v2/pagelet/latest/browser-modules.js"
+    id="union-pagelet-browser-modules-script"></script>
+   
+  <script>!function () { var n = []; document.getElementById("union-pagelet-browser-modules-script").addEventListener("load", function () { n.forEach(function (n) { var e = n[0], i = n[1]; this[e].apply(this, i) }, window.UNION_INTERNAL_MODULE_SYSTEM), UNION_INTERNAL_MODULE_SYSTEM.requirejs.config({ waitSeconds: 15 }) }), window.UNION_INTERNAL_MODULE_SYSTEM = window.UNION_INTERNAL_MODULE_SYSTEM || { require: function () { n.push(["require", arguments]) }, define: function () { n.push(["define", arguments]) } } }()</script>
+  <style>
+    [data-pagelet-render-state=error]~[data-pagelet-role=placeholder],
+    [data-pagelet-render-state=ready]~[data-pagelet-role=placeholder] {
+      display: none
+    }
+  </style>
+  <script class="ot-sdk-show-settings"
+    id="Union__consent-management__snippet">window.UnionConsentManagement = function () { var n = -1 === document.cookie.indexOf("unionCmpEnabled=false"); if (n) { var e = document.createElement("script"); e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.type = "text/javascript", e.charset = "UTF-8", e.async = !0, e.setAttribute("data-domain-script", "98c04d9e-538c-47ab-9820-bad810dce441"), document.head.appendChild(e) } else window.OnetrustActiveGroups = ",C0001,C0002,C0003,C0004,C0005,", window.OneTrust = { ToggleInfoDisplay: function () { }, OnConsentChanged: function () { } }; var o = "Necessary", i = "Analytic", r = "Personalisation", a = "Targeting", c = "Social", s = { C0001: o, C0002: i, C0003: r, C0004: a, C0005: c }, t = "not_loaded", d = !1, u = [], f = { "provider-load": [] }, l = {}; function g(n) { var e = C.getConsentedCategories(), t = Object.keys(s).map(function (n) { return s[n] }); n.setup({ consentedToAll: t.every(function (n) { return 0 <= e.indexOf(n) }), consentedToAny: t.filter(function (n) { return n !== o }).some(function (n) { return 0 <= e.indexOf(n) }), consentedToNecessary: 0 <= e.indexOf(o), consentedToAnalytic: 0 <= e.indexOf(i), consentedToPersonalisation: 0 <= e.indexOf(r), consentedToTargeting: 0 <= e.indexOf(a), consentedToSocial: 0 <= e.indexOf(c), consentedTo: function () { return Array.prototype.slice.call(arguments).every(function (n) { return 0 <= e.indexOf(n) }) }, categories: e }) } function p(n, e) { if (n === o || d && C.consentedTo(n)) return e(); l[n].push(e) } l[o] = [], l[i] = [], l[r] = [], l[a] = [], l[c] = []; var C = { version: "1.0.1", consentPlatformEnabled: n, registerService: function (n) { d && g(n), u.push(n) }, getConsentedCategories: function () { return (window.OnetrustActiveGroups || ",C0001,").split(",").filter(function (n) { return n && s[n] }).map(function (n) { return s[n] }) }, togglePreferencesModal: function () { t = "changing", OneTrust.ToggleInfoDisplay(), OneTrust.OnConsentChanged(function () { window.location.reload() }) }, addEventListener: function (n, e) { "provider-load" === n && ("provider-load" === n && d ? e() : f[n].push(e)) }, removeEventListener: function (n, e) { "provider-load" === n && f[n].splice(f[n].indexOf(e), 1) }, getCookieSettingsButtonText: function () { return OneTrust.GetDomainData().CookieSettingButtonText }, consentedTo: function (n) { return 0 <= C.getConsentedCategories().indexOf(n) }, onConsentedToNecessary: function (n) { return p(o, n) }, onConsentedToAnalytic: function (n) { return p(i, n) }, onConsentedToPersonalisation: function (n) { return p(r, n) }, onConsentedToTargeting: function (n) { return p(a, n) }, onConsentedToSocial: function (n) { return p(c, n) } }; return window.OptanonWrapper = function () { var n; d || (d = !0, f["provider-load"].forEach(function (n) { n() })), "loading" !== (t = "not_loaded" === (n = t) ? "loading" : "loading" === n ? "changing" : "done") && "changing" !== t || u.forEach(function (n) { g(n) }), C.getConsentedCategories().forEach(function (n) { l[n].forEach(function (n) { n() }), l[n] = [] }) }, n || window.OptanonWrapper(), C }()</script>
+  <script
+    type="text/javascript">!function () { var i = window.analytics = window.analytics || []; if (!i.initialize) if (i.invoked) window.console && console.error && console.error("Segment snippet included twice."); else { i.invoked = !0, i.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"], i.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); return e.unshift(t), i.push(e), i } }; for (var e = 0; e < i.methods.length; e++) { var t = i.methods[e]; i[t] = i.factory(t) } i.load = function (e, t) { var n = document.createElement("script"); n.type = "text/javascript", n.async = !0, n.src = "https://cdn.segment.com/analytics.js/v1/" + e + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a), i._loadOptions = t }, i._writeKey = "nibq354xak", i.SNIPPET_VERSION = "4.13.2" } }()</script>
+  <script id="Union__fragment_loader">
+    window.UNION_INTERNAL_FRAGMENT_LOADER = ((expirationPeriod, cacheNamespace, window, document, storage, JSON, Date) => {
+      const now = new Date;
+      
+
+      const createCacheStorage = () => {
+        const getCacheKey = (fragment) => {
+          return cacheNamespace + fragment.name;
+        };
+
+        const usedKeys = new Set();
+        const unloadEvent = 'onpagehide' in window ? 'pagehide' : 'unload';
+        window.addEventListener(unloadEvent, () => {
+          Object.keys(storage).forEach((key) => {
+            if (key.indexOf(cacheNamespace) === 0 && !usedKeys.has(key)) {
+              storage.removeItem(key);
+              console.warn('Deleting fragment cache: ', key);
             }
+          });
+        });
+
+        return {
+          set: (fragment, result) => {
+            try {
+              const key = getCacheKey(fragment);
+              usedKeys.add(key);
+              storage[key] = JSON.stringify([now, result]);
+            } catch (error) {
+              console.warn('Error hydrating fragment cache: ', error);
+            }
+          },
+          get: (fragment) => {
+            const key = getCacheKey(fragment)
+            usedKeys.add(key);
+            return storage[key];
           }
         }
-  
-        const createHTMLFragmentLoader = () => {
-          const cacheStorage = createCacheStorage();
-  
-          const performFetch = async (fragment) => {
-            const response = await fetch(fragment.url)
-            if (!response.ok) {
-              console.warn('Unable to fetch fragment', fragment);
-              return null;
-            }
-  
-            return await response.text();
+      }
+
+      const createHTMLFragmentLoader = () => {
+        const cacheStorage = createCacheStorage();
+
+        const performFetch = async (fragment) => {
+          const response = await fetch(fragment.url)
+          if (!response.ok) {
+            console.warn('Unable to fetch fragment', fragment);
+            return null;
           }
-  
-          const performAppend = (fragment, targetElement, text) => {
-            const domFragment = document.createRange()
-              .createContextualFragment(
-                '<!-- fragment start ' + fragment.id + '-->' + text + '<!-- fragment end -->'
-              );
-            domFragment.firstChild.id = fragment.id;
-            targetElement.appendChild(domFragment);
+
+          return await response.text();
+        }
+
+        const performAppend = (fragment, targetElement, text) => {
+          const domFragment = document.createRange()
+            .createContextualFragment(
+              '<!-- fragment start ' + fragment.id + '-->' + text + '<!-- fragment end -->'
+            );
+          domFragment.firstChild.id = fragment.id;
+          targetElement.appendChild(domFragment);
+        }
+
+        const append = (fragment, text) => {
+          let target = fragment.options.target;
+
+          if (target !== 'head' && target !== 'body') {
+            target = 'body';
           }
-  
-          const append = (fragment, text) => {
-            let target = fragment.options.target;
-  
-            if (target !== 'head' && target !== 'body') {
-              target = 'body';
-            }
-  
-            const targetElement = document[target];
-  
-            if (target === 'body' && !targetElement) {
-              document.addEventListener('readystatechange', function () {
-  
-                if (document.readyState === 'interactive')
-                  performAppend(fragment, document.body, text);
-              });
+
+          const targetElement = document[target];
+
+          if (target === 'body' && !targetElement) {
+            document.addEventListener('readystatechange', function () {
+
+              if (document.readyState === 'interactive')
+                performAppend(fragment, document.body, text);
+            });
+            return;
+          }
+
+          performAppend(fragment, targetElement, text);
+        }
+
+        const fetchAppend = async (fragment) => {
+          const text = await performFetch(fragment)
+          if (text) {
+            append(fragment, text);
+          }
+          return text;
+        }
+
+        const fetchAppendCache = async (fragment) => {
+          const text = await fetchAppend(fragment)
+          if (text)
+            cacheStorage.set(fragment, text);
+        }
+
+        const fetchCache = async (fragment) => {
+          const text = await performFetch(fragment)
+          if (text)
+            cacheStorage.set(fragment, text);
+        }
+
+        return {
+          load: async (fragment) => {
+            if (document.getElementById(fragment.id)) {
+              console.log(fragment.id + ': Fragment is already in document. Avoiding load cycle.');
               return;
             }
-  
-            performAppend(fragment, targetElement, text);
-          }
-  
-          const fetchAppend = async (fragment) => {
-            const text = await performFetch(fragment)
-            if (text) {
-              append(fragment, text);
+
+            if (!fragment.options.cache) {
+              return fetchAppend(fragment);
             }
-            return text;
-          }
-  
-          const fetchAppendCache = async (fragment) => {
-            const text = await fetchAppend(fragment)
-            if (text)
-              cacheStorage.set(fragment, text);
-          }
-  
-          const fetchCache = async (fragment) => {
-            const text = await performFetch(fragment)
-            if (text)
-              cacheStorage.set(fragment, text);
-          }
-  
-          return {
-            load: async (fragment) => {
-              if (document.getElementById(fragment.id)) {
-                console.log(fragment.id + ': Fragment is already in document. Avoiding load cycle.');
-                return;
-              }
-  
-              if (!fragment.options.cache) {
-                return fetchAppend(fragment);
-              }
-  
-              const cache = cacheStorage.get(fragment);
-  
-              if (!cache) {
-                return fetchAppendCache(fragment);
-              }
-  
-              const data = JSON.parse(cache);
-              const lastUsed = new Date(data[0]);
-  
-              if (lastUsed > now /* Probably an attacker */) {
-                return fetchAppendCache(fragment);
-              }
-  
-              append(fragment, data[1]);
-  
-              setTimeout(() => {
-                const timeSinceLastUsed = now - lastUsed;
-  
-                if (timeSinceLastUsed >= expirationPeriod) {
-                  fetchCache(fragment);
-                }
-              });
+
+            const cache = cacheStorage.get(fragment);
+
+            if (!cache) {
+              return fetchAppendCache(fragment);
             }
+
+            const data = JSON.parse(cache);
+            const lastUsed = new Date(data[0]);
+
+            if (lastUsed > now /* Probably an attacker */) {
+              return fetchAppendCache(fragment);
+            }
+
+            append(fragment, data[1]);
+
+            setTimeout(() => {
+              const timeSinceLastUsed = now - lastUsed;
+
+              if (timeSinceLastUsed >= expirationPeriod) {
+                fetchCache(fragment);
+              }
+            });
           }
         }
-  
-        return createHTMLFragmentLoader();
-      })(
-        600000,
-        'xou/fragments/',
-        window,
-        document,
-        window.localStorage,
-        JSON,
-        Date
-      );
-    </script>
-    <!-- fragment start Union__fragment__html-document-parts_head --><!--#include virtual="/union-dist/html-document-parts/latest/server/head.html" --><!-- fragment end -->
-    <link rel="preload" href="https://static.theknot.com/wws-guest-view/_next/static/css/30498a168aaec04a.css"
-      as="style" />
-    <link rel="stylesheet" href="https://static.theknot.com/wws-guest-view/_next/static/css/30498a168aaec04a.css"
-      data-n-g="" />
-    <script defer="" nomodule=""
-      src="https://static.theknot.com/wws-guest-view/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/webpack-85a808646c909abe.js"
-      defer=""></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/framework-a87821de553db91d.js"
-      defer=""></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/main-7164f7df19381639.js"
-      defer=""></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/pages/_app-9b4947cd2229f328.js"
-      defer=""></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/567-32d6ed001b6aff28.js" defer=""></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/789-efa364e57eb75f2e.js" defer=""></script>
-    <script
-      src="https://static.theknot.com/wws-guest-view/_next/static/chunks/pages/%5BpathPrefix%5D/%5Bslug%5D/%5B%5B...route%5D%5D-801c886c51d78bdc.js"
-      defer=""></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_buildManifest.js"
-      defer=""></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_ssgManifest.js"
-      defer=""></script>
-    <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_middlewareManifest.js"
-      defer=""></script>
-  
-  </head>
+      }
 
-<body><noscript
+      return createHTMLFragmentLoader();
+    })(
+      600000,
+      'xou/fragments/',
+      window,
+      document,
+      window.localStorage,
+      JSON,
+      Date
+    );
+  </script>
+  <!-- fragment start Union__fragment__html-document-parts_head --><!--#include virtual="/union-dist/html-document-parts/latest/server/head.html" --><!-- fragment end -->
+  <link rel="preload" href="https://static.theknot.com/wws-guest-view/_next/static/css/30498a168aaec04a.css"
+    as="style" />
+  <link rel="stylesheet" href="https://static.theknot.com/wws-guest-view/_next/static/css/30498a168aaec04a.css"
+    data-n-g="" /><noscript data-n-css=""></noscript>
+  <script defer="" nomodule=""
+    src="https://static.theknot.com/wws-guest-view/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/webpack-85a808646c909abe.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/framework-a87821de553db91d.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/main-7164f7df19381639.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/pages/_app-9b4947cd2229f328.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/567-32d6ed001b6aff28.js" defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/chunks/789-efa364e57eb75f2e.js" defer=""></script>
+  <script
+    src="https://static.theknot.com/wws-guest-view/_next/static/chunks/pages/%5BpathPrefix%5D/%5Bslug%5D/%5B%5B...route%5D%5D-801c886c51d78bdc.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_buildManifest.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_ssgManifest.js"
+    defer=""></script>
+  <script src="https://static.theknot.com/wws-guest-view/_next/static/FOZNZh_9Vs-GZh8s7Ia_j/_middlewareManifest.js"
+    defer=""></script>
+
+</head>
+
+<body>
+  
+  <noscript
     data-union-html-insert-start=""></noscript><!-- fragment start Union__fragment__html-document-parts_body --><!--#include virtual="/union-dist/html-document-parts/latest/server/body.html" --><!-- fragment end -->
   <script>window.UNION_INTERNAL_FRAGMENT_LOADER.load({ "id": "Union__fragment__html-document-parts_body", "name": "html-document-parts/body", "url": "https://union.theknot.com/dist/v2/html-document-parts/latest/client/body.html", "options": { "cache": true, "target": "body" } }); window.UNION_INTERNAL_FRAGMENT_LOADER.load({ "id": "Union__fragment__iconography_latest", "name": "iconography/latest", "url": "https://union.theknot.com/dist/v2/iconography/latest/definitions-fragment.html", "options": { "cache": true, "target": "body" } })</script>
   <noscript data-union-html-insert-end=""></noscript>
-  <div id="__next">
+  <div id="__next1">
     <div class="css-1oteowz">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;display=swap"
         media="all" />
@@ -636,143 +651,7 @@
             }
           }
         </style>
-        <nav role="navigation" class="css-1ljskrm">
-          <style data-emotion="css nfosgx">
-            .css-nfosgx {
-              padding-top: 56px;
-              height: 100vh;
-              overflow-y: auto;
-            }
-          </style>
-          <div class="css-nfosgx">
-            <style data-emotion="css kxffhl">
-              .css-kxffhl {
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-flex-direction: column;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                -webkit-align-items: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                list-style: none;
-                margin: 0;
-                padding: 0;
-              }
-            </style>
-            <ul class="css-kxffhl">
-              <style data-emotion="css 252hp8">
-                .css-252hp8 {
-                  text-align: center;
-                  width: 100%;
-                  padding: 8px;
-                }
 
-                .css-252hp8:hover,
-                .css-252hp8:focus {
-                  background-color: rgba(255, 255, 255, 10%);
-                }
-              </style>
-              <li class="css-252hp8">
-                <style data-emotion="css 12he7qw">
-                  .css-12he7qw {
-                    display: block;
-                    padding: 0;
-                    margin: 0;
-                  }
-                </style><a class="css-12he7qw" href="/us/david-safanyuk-and-eunike-olivia-sep-2023">
-                  <style data-emotion="css mwxzs9">
-                    .css-mwxzs9 {
-                      font-family: EB Garamond;
-                      letter-spacing: 1px;
-                      color: #FFFFFF;
-                      font-size: 17px;
-                      font-weight: 500;
-                      border-bottom: 2px solid transparent;
-                      display: block;
-                      letter-spacing: 2px;
-                      line-height: 1;
-                      margin: 0 auto;
-                      padding: 8px 8px 6px;
-                      -webkit-text-decoration: none;
-                      text-decoration: none;
-                      -webkit-transition: all 0.25s;
-                      transition: all 0.25s;
-                      width: -webkit-fit-content;
-                      width: -moz-fit-content;
-                      width: fit-content;
-                    }
-
-                    @media (max-width: 640px) {
-                      .css-mwxzs9 {
-                        font-size: calc(17px * 0.875);
-                      }
-                    }
-
-                    @media(max-width: 640px) {
-                      .css-mwxzs9 {
-                        font-size: calc(18px * 0.9);
-                      }
-                    }
-                  </style><span class="css-mwxzs9">Home</span>
-                </a>
-              </li>
-              <li class="css-252hp8"><a rel="nofollow" class="css-12he7qw"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/our-story"><span class="css-mwxzs9">Our
-                    Story</span></a></li>
-              <li class="css-252hp8"><a rel="nofollow" class="css-12he7qw"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/photos">
-                  <style data-emotion="css ngrlq7">
-                    .css-ngrlq7 {
-                      font-family: EB Garamond;
-                      letter-spacing: 1px;
-                      color: #FFFFFF;
-                      font-size: 17px;
-                      font-weight: 500;
-                      border-bottom: 2px solid transparent;
-                      display: block;
-                      letter-spacing: 2px;
-                      line-height: 1;
-                      margin: 0 auto;
-                      padding: 8px 8px 6px;
-                      -webkit-text-decoration: none;
-                      text-decoration: none;
-                      -webkit-transition: all 0.25s;
-                      transition: all 0.25s;
-                      width: -webkit-fit-content;
-                      width: -moz-fit-content;
-                      width: fit-content;
-                      border-bottom: 2px solid #FFFFFF;
-                    }
-
-                    @media (max-width: 640px) {
-                      .css-ngrlq7 {
-                        font-size: calc(17px * 0.875);
-                      }
-                    }
-
-                    @media(max-width: 640px) {
-                      .css-ngrlq7 {
-                        font-size: calc(18px * 0.9);
-                      }
-                    }
-                  </style><span class="css-ngrlq7">Photos</span>
-                </a></li>
-              <li class="css-252hp8"><a rel="nofollow" class="css-12he7qw"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/q-a"><span class="css-mwxzs9">Q + A</span></a>
-              </li>
-              <li class="css-252hp8"><a class="css-12he7qw"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/registry"><span
-                    class="css-mwxzs9">Registry</span></a></li>
-              <li class="css-252hp8"><a rel="nofollow" class="css-12he7qw"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/rsvp"><span class="css-mwxzs9">RSVP</span></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
         <style data-emotion="css ax96o0">
           .css-ax96o0 {
             display: none;
@@ -844,7 +723,7 @@
                     margin: 0;
                     padding: 8px 0;
                   }
-                </style><a class="css-1x9swe2" href="/us/david-safanyuk-and-eunike-olivia-sep-2023">
+                </style><a class="css-1x9swe2" href="/">
                   <style data-emotion="css 533iwp">
                     .css-533iwp {
                       font-family: EB Garamond;
@@ -887,21 +766,21 @@
                 </a>
               </li>
               <li class="css-haue6f"><a rel="nofollow" class="css-1x9swe2"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/our-story"><span class="css-533iwp">Our
+                  href="/our-story"><span class="css-533iwp">Our
                     Story</span></a></li>
               <li class="css-haue6f"><a rel="nofollow" class="css-1x9swe2"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/photos"><span class="css-ngrlq7">Photos</span></a>
+                  href="/photos"><span class="css-ngrlq7">Photos</span></a>
               </li>
             </ul>
             <ul data-testid="desktop-nav-row-2" class="css-16kcklx">
               <li class="css-haue6f"><a rel="nofollow" class="css-1x9swe2"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/q-a"><span class="css-533iwp">Q + A</span></a>
+                  href="/q-a"><span class="css-533iwp">Q + A</span></a>
               </li>
               <li class="css-haue6f"><a class="css-1x9swe2"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/registry"><span
+                  href="/registry"><span
                     class="css-533iwp">Registry</span></a></li>
               <li class="css-haue6f"><a rel="nofollow" class="css-1x9swe2"
-                  href="/us/david-safanyuk-and-eunike-olivia-sep-2023/rsvp"><span class="css-533iwp">RSVP</span></a>
+                  href="/rsvp"><span class="css-533iwp">RSVP</span></a>
               </li>
             </ul>
           </div>
@@ -910,6 +789,41 @@
           .css-iex2id {
             padding: 16px 0;
             width: 100%;
+          }
+        </style>
+        <style data-emotion="css ngrlq7">
+          .css-ngrlq7 {
+            font-family: EB Garamond;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            font-size: 17px;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            display: block;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin: 0 auto;
+            padding: 8px 8px 6px;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            border-bottom: 2px solid #FFFFFF;
+          }
+
+          @media (max-width: 640px) {
+            .css-ngrlq7 {
+              font-size: calc(17px * 0.875);
+            }
+          }
+
+          @media(max-width: 640px) {
+            .css-ngrlq7 {
+              font-size: calc(18px * 0.9);
+            }
           }
         </style>
         <div class="css-iex2id">
@@ -1125,6 +1039,14 @@
           </div>
         </div>
       </div>
+      <div id="myModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <span class="modal-prev">&#10094;</span>
+        <span class="modal-next">&#10095;</span>
+        <div class="modal-content">
+          <img id="modal-image" src="" alt="" class="modal-image">
+        </div>
+      </div>
       <style data-emotion="css rzmzie">
         .css-rzmzie {
           -webkit-align-items: center;
@@ -1279,8 +1201,7 @@
       </footer>
     </div>
   </div>
-  <script id="__NEXT_DATA__"
-    type="application/json">       { "props": {
+  <script id="__NEXT_DATA__" type="application/json">       { "props": {
       "pageProps": {},
       "apolloState": {
           "GDS_GuestWedding:5b8b39be-e25b-43d6-bab7-426f4cc6b0e7": {
@@ -2540,6 +2461,9 @@
                       "__ref": "WWS_Page:83235694"
                   },
                   {
+                    "__ref": "WWS_Page:83235695"
+                },
+                  {
                       "__ref": "WWS_Page:84454892"
                   }
               ]
@@ -2601,7 +2525,7 @@
           "key": null,
           "ref": null,
           "props": {
-              "children": "\n\u003clink rel=\"preload\" as=\"script\" href=\"https://union.theknot.com/dist/v2/tk-pagelet-header-nav/latest/main.js\"\u003e\n\u003clink rel=\"preload\" as=\"style\" href=\"https://union.theknot.com/dist/v2/tk-pagelet-header-nav/latest/secondary.css\"\u003e\n\n\u003cscript async src=\"https://union.theknot.com/dist/v2/pagelet/latest/browser-modules.js\" id=\"union-pagelet-browser-modules-script\"\u003e\u003c/script\u003e\n\u003cscript\u003e!function(){var n=[];document.getElementById(\"union-pagelet-browser-modules-script\").addEventListener(\"load\",function(){n.forEach(function(n){var e=n[0],i=n[1];this[e].apply(this,i)},window.UNION_INTERNAL_MODULE_SYSTEM),UNION_INTERNAL_MODULE_SYSTEM.requirejs.config({waitSeconds:15})}),window.UNION_INTERNAL_MODULE_SYSTEM=window.UNION_INTERNAL_MODULE_SYSTEM||{require:function(){n.push([\"require\",arguments])},define:function(){n.push([\"define\",arguments])}}}()\u003c/script\u003e\n\u003cstyle\u003e[data-pagelet-render-state=error]~[data-pagelet-role=placeholder],[data-pagelet-render-state=ready]~[data-pagelet-role=placeholder]{display:none}\u003c/style\u003e\n\u003cscript class=\"ot-sdk-show-settings\" id=\"Union__consent-management__snippet\"\u003ewindow.UnionConsentManagement=function(){var n=-1===document.cookie.indexOf(\"unionCmpEnabled=false\");if(n){var e=document.createElement(\"script\");e.src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\",e.type=\"text/javascript\",e.charset=\"UTF-8\",e.async=!0,e.setAttribute(\"data-domain-script\",\"98c04d9e-538c-47ab-9820-bad810dce441\"),document.head.appendChild(e)}else window.OnetrustActiveGroups=\",C0001,C0002,C0003,C0004,C0005,\",window.OneTrust={ToggleInfoDisplay:function(){},OnConsentChanged:function(){}};var o=\"Necessary\",i=\"Analytic\",r=\"Personalisation\",a=\"Targeting\",c=\"Social\",s={C0001:o,C0002:i,C0003:r,C0004:a,C0005:c},t=\"not_loaded\",d=!1,u=[],f={\"provider-load\":[]},l={};function g(n){var e=C.getConsentedCategories(),t=Object.keys(s).map(function(n){return s[n]});n.setup({consentedToAll:t.every(function(n){return 0\u003c=e.indexOf(n)}),consentedToAny:t.filter(function(n){return n!==o}).some(function(n){return 0\u003c=e.indexOf(n)}),consentedToNecessary:0\u003c=e.indexOf(o),consentedToAnalytic:0\u003c=e.indexOf(i),consentedToPersonalisation:0\u003c=e.indexOf(r),consentedToTargeting:0\u003c=e.indexOf(a),consentedToSocial:0\u003c=e.indexOf(c),consentedTo:function(){return Array.prototype.slice.call(arguments).every(function(n){return 0\u003c=e.indexOf(n)})},categories:e})}function p(n,e){if(n===o||d\u0026\u0026C.consentedTo(n))return e();l[n].push(e)}l[o]=[],l[i]=[],l[r]=[],l[a]=[],l[c]=[];var C={version:\"1.0.1\",consentPlatformEnabled:n,registerService:function(n){d\u0026\u0026g(n),u.push(n)},getConsentedCategories:function(){return(window.OnetrustActiveGroups||\",C0001,\").split(\",\").filter(function(n){return n\u0026\u0026s[n]}).map(function(n){return s[n]})},togglePreferencesModal:function(){t=\"changing\",OneTrust.ToggleInfoDisplay(),OneTrust.OnConsentChanged(function(){window.location.reload()})},addEventListener:function(n,e){\"provider-load\"===n\u0026\u0026(\"provider-load\"===n\u0026\u0026d?e():f[n].push(e))},removeEventListener:function(n,e){\"provider-load\"===n\u0026\u0026f[n].splice(f[n].indexOf(e),1)},getCookieSettingsButtonText:function(){return OneTrust.GetDomainData().CookieSettingButtonText},consentedTo:function(n){return 0\u003c=C.getConsentedCategories().indexOf(n)},onConsentedToNecessary:function(n){return p(o,n)},onConsentedToAnalytic:function(n){return p(i,n)},onConsentedToPersonalisation:function(n){return p(r,n)},onConsentedToTargeting:function(n){return p(a,n)},onConsentedToSocial:function(n){return p(c,n)}};return window.OptanonWrapper=function(){var n;d||(d=!0,f[\"provider-load\"].forEach(function(n){n()})),\"loading\"!==(t=\"not_loaded\"===(n=t)?\"loading\":\"loading\"===n?\"changing\":\"done\")\u0026\u0026\"changing\"!==t||u.forEach(function(n){g(n)}),C.getConsentedCategories().forEach(function(n){l[n].forEach(function(n){n()}),l[n]=[]})},n||window.OptanonWrapper(),C}()\u003c/script\u003e\u003cscript type=\"text/javascript\"\u003e!function(){var i=window.analytics=window.analytics||[];if(!i.initialize)if(i.invoked)window.console\u0026\u0026console.error\u0026\u0026console.error(\"Segment snippet included twice.\");else{i.invoked=!0,i.methods=[\"trackSubmit\",\"trackClick\",\"trackLink\",\"trackForm\",\"pageview\",\"identify\",\"reset\",\"group\",\"track\",\"ready\",\"alias\",\"debug\",\"page\",\"once\",\"off\",\"on\",\"addSourceMiddleware\",\"addIntegrationMiddleware\",\"setAnonymousId\",\"addDestinationMiddleware\"],i.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(t),i.push(e),i}};for(var e=0;e\u003ci.methods.length;e++){var t=i.methods[e];i[t]=i.factory(t)}i.load=function(e,t){var n=document.createElement(\"script\");n.type=\"text/javascript\",n.async=!0,n.src=\"https://cdn.segment.com/analytics.js/v1/\"+e+\"/analytics.min.js\";var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(n,a),i._loadOptions=t},i._writeKey=\"nibq354xak\",i.SNIPPET_VERSION=\"4.13.2\"}}()\u003c/script\u003e\n\u003cscript\u003e!function(t,e){if(window.UnionConsentManagement){window.UnionConsentManagement.onSegmentMappingJsLoad=function(n){n(t,e)};var n=document.createElement(\"script\");n.src=\"https://union.theknot.com/dist/v2/tk-analytics/latest/consented-segment.js\",n.type=\"text/javascript\",n.async=!0,document.head.appendChild(n)}else analytics.load(t,e)}(\"nibq354xak\",{})\u003c/script\u003e\n\u003cscript data-ga4-segment-patch\u003efunction gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag(\"js\",new Date),function(a,d,e,s){var n=\"get\",t=\"G-N0GL0GGXYR\",o=function(){var e=Array.prototype.slice.call(arguments);return new a(function(n){e.push(n),gtag.apply(null,e)})},r=o(n,t,\"session_id\"),i=o(n,t,\"session_number\"),u=o(n,t,\"client_id\"),c=new a(function(n){e.ready(n)}),p=a.all([r,i,u]);e.addSourceMiddleware(function(n){var t,r=n.payload,i=n.next;return dataLayer.push===Array.prototype.push\u0026\u0026d.warn(s+\"Waiting for dataLayer to load before flushing segment events. This may take up to 3 seconds\"),a.race([p,(t=3,new a(function(n,e){var a=new Error(\"Segment loaded but data layer did not\");a.type=\"GTAG_NOT_LOADED\",c.then(function(){setTimeout(function(){e(a)},1e3*t)}),window.addEventListener(\"beforeunload\",function(){e(a)})}))]).then(function(n){var e,a=n[0],t=n[1],o=n[2];if(e=\"identify\"===r.type()?\"traits\":\"properties\",!r.obj[e])return d.warn(s+\"Analytics event does not contain namespace property: \"+e),void i(r);r.obj[e].ga4SessionId=a,r.obj[e].ga4SessionNumber=t,r.obj[e].ga4ClientId=o,i(r)}).catch(function(n){d.error(n),\"GTAG_NOT_LOADED\"===n.type?d.warn(s+\"Skipping GA4 patch because gtag did not load.\"):d.warn(s+\"Skipping GA4 patch because an unknwon error occurred.\"),i(r)})})}(Promise,console,analytics,\"[union ga4 segment patch] \")\u003c/script\u003e\u003cscript id=\"Union__fragment_loader\"\u003e\nwindow.UNION_INTERNAL_FRAGMENT_LOADER = ((expirationPeriod, cacheNamespace, window, document, storage, JSON, Date) =\u003e {\n    const now = new Date;\n\n    const createCacheStorage = () =\u003e {\n      const getCacheKey = (fragment) =\u003e {\n        return cacheNamespace + fragment.name;\n      };\n\n      const usedKeys = new Set();\n      const unloadEvent = 'onpagehide' in window ? 'pagehide' : 'unload';\n      window.addEventListener(unloadEvent, () =\u003e {\n        Object.keys(storage).forEach((key) =\u003e {\n          if (key.indexOf(cacheNamespace) === 0 \u0026\u0026 !usedKeys.has(key)) {\n            storage.removeItem(key);\n            console.warn('Deleting fragment cache: ', key);\n          }\n        });\n      });\n\n      return {\n        set: (fragment, result) =\u003e {\n          try {\n            const key = getCacheKey(fragment);\n            usedKeys.add(key);\n            storage[key] = JSON.stringify([now, result]);\n          } catch (error) {\n            console.warn('Error hydrating fragment cache: ', error);\n          }\n        },\n        get: (fragment) =\u003e {\n          const key = getCacheKey(fragment)\n          usedKeys.add(key);\n          return storage[key];\n        }\n      }\n    }\n\n    const createHTMLFragmentLoader = () =\u003e {\n      const cacheStorage = createCacheStorage();\n\n      const performFetch = async (fragment) =\u003e {\n        const response = await fetch(fragment.url)\n        if (!response.ok) {\n          console.warn('Unable to fetch fragment', fragment);\n          return null;\n        }\n\n        return await response.text();\n      }\n\n      const performAppend = (fragment, targetElement, text) =\u003e {\n        const domFragment = document.createRange()\n          .createContextualFragment(\n            '\u003c!-- fragment start ' + fragment.id + '--\u003e' + text + '\u003c!-- fragment end --\u003e'\n          );\n        domFragment.firstChild.id = fragment.id;\n        targetElement.appendChild(domFragment);\n      }\n\n      const append = (fragment, text) =\u003e {\n        let target = fragment.options.target;\n\n        if (target !== 'head' \u0026\u0026 target !== 'body') {\n          target = 'body';\n        }\n\n        const targetElement = document[target];\n\n        if (target === 'body' \u0026\u0026 !targetElement) {\n          document.addEventListener('readystatechange', function () {\n\n            if (document.readyState === 'interactive')\n              performAppend(fragment, document.body, text);\n          });\n          return;\n        }\n\n        performAppend(fragment, targetElement, text);\n      }\n\n      const fetchAppend = async (fragment) =\u003e {\n        const text = await performFetch(fragment)\n        if (text) {\n          append(fragment, text);\n        }\n        return text;\n      }\n\n      const fetchAppendCache = async (fragment) =\u003e {\n        const text = await fetchAppend(fragment)\n        if (text)\n          cacheStorage.set(fragment, text);\n      }\n\n      const fetchCache = async (fragment) =\u003e {\n        const text = await performFetch(fragment)\n        if (text)\n          cacheStorage.set(fragment, text);\n      }\n\n      return {\n        load: async (fragment) =\u003e {\n          if (document.getElementById(fragment.id)) {\n            console.log(fragment.id + ': Fragment is already in document. Avoiding load cycle.');\n            return;\n          }\n\n          if (!fragment.options.cache) {\n            return fetchAppend(fragment);\n          }\n\n          const cache = cacheStorage.get(fragment);\n\n          if (!cache) {\n            return fetchAppendCache(fragment);\n          }\n\n          const data = JSON.parse(cache);\n          const lastUsed = new Date(data[0]);\n\n          if (lastUsed \u003e now /* Probably an attacker */) {\n            return fetchAppendCache(fragment);\n          }\n\n          append(fragment, data[1]);\n\n          setTimeout(() =\u003e {\n            const timeSinceLastUsed = now - lastUsed;\n\n            if (timeSinceLastUsed \u003e= expirationPeriod) {\n              fetchCache(fragment);\n            }\n          });\n        }\n      }\n    }\n\n    return createHTMLFragmentLoader();\n  })(\n    600000,\n    'xou/fragments/',\n    window,\n    document,\n    window.localStorage,\n    JSON,\n    Date\n  );\n\u003c/script\u003e"
+                  "children": "\n\u003clink rel=\"preload\" as=\"script\" href=\"https://union.theknot.com/dist/v2/tk-pagelet-header-nav/latest/main.js\"\u003e\n\u003clink rel=\"preload\" as=\"style\" href=\"https://union.theknot.com/dist/v2/tk-pagelet-header-nav/latest/secondary.css\"\u003e\n\n\u003cscript async src=\"https://union.theknot.com/dist/v2/pagelet/latest/browser-modules.js\" id=\"union-pagelet-browser-modules-script\"\u003e\u003c/script\u003e\n\u003cscript\u003e!function(){var n=[];document.getElementById(\"union-pagelet-browser-modules-script\").addEventListener(\"load\",function(){n.forEach(function(n){var e=n[0],i=n[1];this[e].apply(this,i)},window.UNION_INTERNAL_MODULE_SYSTEM),UNION_INTERNAL_MODULE_SYSTEM.requirejs.config({waitSeconds:15})}),window.UNION_INTERNAL_MODULE_SYSTEM=window.UNION_INTERNAL_MODULE_SYSTEM||{require:function(){n.push([\"require\",arguments])},define:function(){n.push([\"define\",arguments])}}}()\u003c/script\u003e\n\u003cstyle\u003e[data-pagelet-render-state=error]~[data-pagelet-role=placeholder],[data-pagelet-render-state=ready]~[data-pagelet-role=placeholder]{display:none}\u003c/style\u003e\n\u003cscript class=\"ot-sdk-show-settings\" id=\"Union__consent-management__snippet\"\u003ewindow.UnionConsentManagement=function(){var n=-1===document.cookie.indexOf(\"unionCmpEnabled=false\");if(n){var e=document.createElement(\"script\");e.src=\"https://cdn.cookielaw.org/scripttemplates/otSDKStub.js\",e.type=\"text/javascript\",e.charset=\"UTF-8\",e.async=!0,e.setAttribute(\"data-domain-script\",\"98c04d9e-538c-47ab-9820-bad810dce441\"),document.head.appendChild(e)}else window.OnetrustActiveGroups=\",C0001,C0002,C0003,C0004,C0005,\",window.OneTrust={ToggleInfoDisplay:function(){},OnConsentChanged:function(){}};var o=\"Necessary\",i=\"Analytic\",r=\"Personalisation\",a=\"Targeting\",c=\"Social\",s={C0001:o,C0002:i,C0003:r,C0004:a,C0005:c},t=\"not_loaded\",d=!1,u=[],f={\"provider-load\":[]},l={};function g(n){var e=C.getConsentedCategories(),t=Object.keys(s).map(function(n){return s[n]});n.setup({consentedToAll:t.every(function(n){return 0\u003c=e.indexOf(n)}),consentedToAny:t.filter(function(n){return n!==o}).some(function(n){return 0\u003c=e.indexOf(n)}),consentedToNecessary:0\u003c=e.indexOf(o),consentedToAnalytic:0\u003c=e.indexOf(i),consentedToPersonalisation:0\u003c=e.indexOf(r),consentedToTargeting:0\u003c=e.indexOf(a),consentedToSocial:0\u003c=e.indexOf(c),consentedTo:function(){return Array.prototype.slice.call(arguments).every(function(n){return 0\u003c=e.indexOf(n)})},categories:e})}function p(n,e){if(n===o||d\u0026\u0026C.consentedTo(n))return e();l[n].push(e)}l[o]=[],l[i]=[],l[r]=[],l[a]=[],l[c]=[];var C={version:\"1.0.1\",consentPlatformEnabled:n,registerService:function(n){d\u0026\u0026g(n),u.push(n)},getConsentedCategories:function(){return(window.OnetrustActiveGroups||\",C0001,\").split(\",\").filter(function(n){return n\u0026\u0026s[n]}).map(function(n){return s[n]})},togglePreferencesModal:function(){t=\"changing\",OneTrust.ToggleInfoDisplay(),OneTrust.OnConsentChanged(function(){window.location.reload()})},addEventListener:function(n,e){\"provider-load\"===n\u0026\u0026(\"provider-load\"===n\u0026\u0026d?e():f[n].push(e))},removeEventListener:function(n,e){\"provider-load\"===n\u0026\u0026f[n].splice(f[n].indexOf(e),1)},getCookieSettingsButtonText:function(){return OneTrust.GetDomainData().CookieSettingButtonText},consentedTo:function(n){return 0\u003c=C.getConsentedCategories().indexOf(n)},onConsentedToNecessary:function(n){return p(o,n)},onConsentedToAnalytic:function(n){return p(i,n)},onConsentedToPersonalisation:function(n){return p(r,n)},onConsentedToTargeting:function(n){return p(a,n)},onConsentedToSocial:function(n){return p(c,n)}};return window.OptanonWrapper=function(){var n;d||(d=!0,f[\"provider-load\"].forEach(function(n){n()})),\"loading\"!==(t=\"not_loaded\"===(n=t)?\"loading\":\"loading\"===n?\"changing\":\"done\")\u0026\u0026\"changing\"!==t||u.forEach(function(n){g(n)}),C.getConsentedCategories().forEach(function(n){l[n].forEach(function(n){n()}),l[n]=[]})},n||window.OptanonWrapper(),C}()\u003c/script\u003e\u003cscript type=\"text/javascript\"\u003e!function(){var i=window.analytics=window.analytics||[];if(!i.initialize)if(i.invoked)window.console\u0026\u0026console.error\u0026\u0026console.error(\"Segment snippet included twice.\");else{i.invoked=!0,i.methods=[\"trackSubmit\",\"trackClick\",\"trackLink\",\"trackForm\",\"pageview\",\"identify\",\"reset\",\"group\",\"track\",\"ready\",\"alias\",\"debug\",\"page\",\"once\",\"off\",\"on\",\"addSourceMiddleware\",\"addIntegrationMiddleware\",\"setAnonymousId\",\"addDestinationMiddleware\"],i.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(t),i.push(e),i}};for(var e=0;e\u003ci.methods.length;e++){var t=i.methods[e];i[t]=i.factory(t)}i.load=function(e,t){var n=document.createElement(\"script\");n.type=\"text/javascript\",n.async=!0,n.src=\"https://cdn.segment.com/analytics.js/v1/\"+e+\"/analytics.min.js\";var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(n,a),i._loadOptions=t},i._writeKey=\"nibq354xak\",i.SNIPPET_VERSION=\"4.13.2\"}}()\u003c/script\u003e\n\u003cscript\u003e!function(t,e){if(window.UnionConsentManagement){window.UnionConsentManagement.onSegmentMappingJsLoad=function(n){n(t,e)};var n=document.createElement(\"script\");n.src=\"https://union.theknot.com/dist/v2/tk-analytics/latest/consented-segment.js\",n.type=\"text/javascript\",n.async=!0,document.head.appendChild(n)}else analytics.load(t,e)}(\"nibq354xak\",{})\u003c/script\u003e\n\u003cscript data-ga4-segment-patch\u003efunction gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag(\"js\",new Date),function(a,d,e,s){var n=\"get\",t=\"G-N0GL0GGXYR\",o=function(){var e=Array.prototype.slice.call(arguments);return new a(function(n){e.push(n),gtag.apply(null,e)})},r=o(n,t,\"session_id\"),i=o(n,t,\"session_number\"),u=o(n,t,\"client_id\"),c=new a(function(n){e.ready(n)}),p=a.all([r,i,u]);e.addSourceMiddleware(function(n){var t,r=n.payload,i=n.next;return dataLayer.push===Array.prototype.push\u0026\u0026d.warn(s+\"Waiting for dataLayer to load before flushing segment events. This may take up to 3 seconds\"),a.race([p,(t=3,new a(function(n,e){var a=new Error(\"Segment loaded but data layer did not\");a.type=\"GTAG_NOT_LOADED\",c.then(function(){setTimeout(function(){e(a)},1e3*t)}),window.addEventListener(\"beforeunload\",function(){e(a)})}))]).then(function(n){var e,a=n[0],t=n[1],o=n[2];if(e=\"identify\"===r.type()?\"traits\":\"properties\",!r.obj[e])return d.warn(s+\"Analytics event does not contain namespace property: \"+e),void i(r);r.obj[e].ga4SessionId=a,r.obj[e].ga4SessionNumber=t,r.obj[e].ga4ClientId=o,i(r)}).catch(function(n){d.error(n),\"GTAG_NOT_LOADED\"===n.type?d.warn(s+\"Skipping GA4 patch because gtag did not load.\"):d.warn(s+\"Skipping GA4 patch because an unknwon error occurred.\"),i(r)})})}(Promise,console,analytics,\"[union ga4 segment patch] \")\u003c/script\u003e\u003cscript id=\"Union__fragment_loader\"\u003e\nwindow.UNION_INTERNAL_FRAGMENT_LOADER = ((expirationPeriod, cacheNamespace, window, document, storage, JSON, Date) =\u003e {\n    const now = new Date;\n\n    const createCacheStorage = () =\u003e {\n      const getCacheKey = (fragment) =\u003e {\n        return cacheNamespace + fragment.name;\n      };\n\n      const usedKeys = new Set();\n      const unloadEvent = 'onpagehide' in window ? 'pagehide' : 'unload';\n      window.addEventListener(unloadEvent, () =\u003e {\n        Object.keys(storage).forEach((key) =\u003e {\n          if (key.indexOf(cacheNamespace) === 0 \u0026\u0026 !usedKeys.has(key)) {\n            storage.removeItem(key);\n            console.warn('Deleting fragment cache: ', key);\n          }\n        });\n      });\n\n      return {\n        set: (fragment, result) =\u003e {\n          try {\n            const key = getCacheKey(fragment);\n            usedKeys.add(key);\n            storage[key] = JSON.stringify([now, result]);\n          } catch (error) {\n            console.warn('Error hydrating fragment cache: ', error);\n          }\n        },\n        get: (fragment) =\u003e {\n          const key = getCacheKey(fragment)\n          usedKeys.add(key);\n          return storage[key];\n        }\n      }\n    }\n\n    const createHTMLFragmentLoader = () =\u003e {\n      const cacheStorage = createCacheStorage();\n\n      const performFetch = async (fragment) =\u003e {\n        const response = await fetch(fragment.url)\n        if (!response.ok) {\n          console.warn('Unable to fetch fragment', fragment);\n          return null;\n        }\n\n        return await response.text();\n      }\n\n      const performAppend = (fragment, targetElement, text) =\u003e {\n        const domFragment = document.createRange()\n          .createContextualFragment(\n            '\u003c!-- fragment start ' + fragment.id + '--\u003e' + text + '\u003c!-- fragment end --\u003e'\n          );\n        domFragment.firstChild.id = fragment.id;\n        targetElement.appendChild(domFragment);\n      }\n\n      const append = (fragment, text) =\u003e {\n        let target = fragment.options.target;\n\n        if (target !== 'head' \u0026\u0026 target !== 'body') {\n          target = 'body';\n        }\n\n        const targetElement = document[target];\n\n        if (target === 'body' \u0026\u0026 !targetElement) {\n          document.addEventListener('readystatechange', function () {\n\n            if (document.readyState === 'interactive')\n              performAppend(fragment, document.body, text);\n          });\n          return;\n        }\n\n        performAppend(fragment, targetElement, text);\n      }\n\n      const fetchAppend = async (fragment) =\u003e {\n        const text = await performFetch(fragment)\n        if (text) {\n          append(fragment, text);\n        }\n        return text;\n      }\n\n      const fetchAppendCache = async (fragment) =\u003e {\n        const text = await fetchAppend(fragment)\n        if (text)\n          cacheStorage.set(fragment, text);\n      }\n\n      const fetchCache = async (fragment) =\u003e {\n        const text = await performFetch(fragment)\n        if (text)\n          cacheStorage.set(fragment, text);\n      }\n\n      return {\n        load: async (fragment) =\u003e {\n          if (document.getElementById(fragment.id)) {\n            console.log(fragment.id + ': Fragment is already in document. Avoiding load cycle.');\n            return;\n          }\n\n          if (!fragment.options.cache) {\n            return fetchAppend(fragment);\n          }\n\n          const cache = cacheStorage.get(fragment);\n\n          if (!cache) {\n            return fetchAppendCache(fragment);\n          }\n\n          const data = JSON.parse(cache);\n          const lastUsed = new Date(data[0]);\n\n          if (lastUsed \u003e now /* Probably an attacker */) {\n            return fetchAppendCache(fragment);\n          }\n\n          append(fragment, data[1]);\n\n          setTimeout(() =\u003e {\n            const timeSinceLastUsed = now - lastUsed;\n\n            if (timeSinceLastUsed \u003e= expirationPeriod) {\n              fetchCache(fragment);\n            }\n          });\n        }\n      }\n    }\n\n    return createHTMLFragmentLoader();\n  })(\n    600000,\n    'xou/fragments/',\n    window,\n    document,\n    window.localStorage,\n    JSON,\n    Date\n  );\n\u003c/script\u003e\u003c!-- fragment start Union__fragment__html-document-parts_head --\u003e\u003c!--#include virtual=\"/union-dist/html-document-parts/latest/server/head.html\" --\u003e\u003c!-- fragment end --\u003e\u003cscript\u003ewindow.UNION_INTERNAL_FRAGMENT_LOADER.load({\"id\":\"Union__fragment__html-document-parts_head\",\"name\":\"html-document-parts/head\",\"url\":\"https://union.theknot.com/dist/v2/html-document-parts/latest/client/head.html\",\"options\":{\"cache\":true,\"target\":\"head\"}})\u003c/script\u003e"
           },
           "_owner": null
       },
@@ -2609,7 +2533,7 @@
           "key": null,
           "ref": null,
           "props": {
-              "children": "window.UNION_INTERNAL_FRAGMENT_LOADER.load({\"id\":\"Union__fragment__iconography_latest\",\"name\":\"iconography/latest\",\"url\":\"https://union.theknot.com/dist/v2/iconography/latest/definitions-fragment.html\",\"options\":{\"cache\":true,\"target\":\"body\"}})\u003c/script\u003e"
+            "children": "\u003c!-- fragment start Union__fragment__html-document-parts_body --\u003e\u003c!--#include virtual=\"/union-dist/html-document-parts/latest/server/body.html\" --\u003e\u003c!-- fragment end --\u003e\u003cscript\u003ewindow.UNION_INTERNAL_FRAGMENT_LOADER.load({\"id\":\"Union__fragment__html-document-parts_body\",\"name\":\"html-document-parts/body\",\"url\":\"https://union.theknot.com/dist/v2/html-document-parts/latest/client/body.html\",\"options\":{\"cache\":true,\"target\":\"body\"}});window.UNION_INTERNAL_FRAGMENT_LOADER.load({\"id\":\"Union__fragment__iconography_latest\",\"name\":\"iconography/latest\",\"url\":\"https://union.theknot.com/dist/v2/iconography/latest/definitions-fragment.html\",\"options\":{\"cache\":true,\"target\":\"body\"}})\u003c/script\u003e"
           },
           "_owner": null
       }
@@ -2619,7 +2543,318 @@
   "gip": true,
   "appGip": true,
   "scriptLoader": []
+}</script>
+<script>
+    // Get all gallery images excluding SVG
+    const galleryImages = Array.from(document.querySelectorAll('.PhotoGalleryItem img'))
+      .filter(img => img.src.indexOf('data:image/svg+xml') === -1);
+
+    // Get the modal, modal image, and navigation arrows
+    const modal = document.getElementById('myModal');
+    const modalImage = document.getElementById('modal-image');
+    const modalPrev = document.querySelector('.modal-prev');
+    const modalNext = document.querySelector('.modal-next');
+    const modalClose = document.querySelector('.modal-close');
+
+    let currentIndex = 0;
+
+    // Open the modal and display the clicked image
+    function openModal(imageUrl) {
+      modal.style.display = 'flex';
+      const largeImageUrl = imageUrl.replace('~rt_auto-sc_300.300', '');
+  modalImage.src = largeImageUrl;
+    }
+
+    // Close the modal
+    function closeModal() {
+      modal.style.display = 'none';
+    }
+
+    function showPrevImage() {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      const imageUrl = galleryImages[currentIndex].getAttribute('src');
+      const largeImageUrl = imageUrl.replace('~rt_auto-sc_300.300', '');
+      modalImage.src = largeImageUrl;
 }
+
+// Show next image
+    function showNextImage() {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      const imageUrl = galleryImages[currentIndex].getAttribute('src');
+      const largeImageUrl = imageUrl.replace('~rt_auto-sc_300.300', '');
+      modalImage.src = largeImageUrl;
+    }
+
+    // Attach click event listeners to the gallery images
+    galleryImages.forEach(function(image, index) {
+      image.addEventListener('click', function() {
+        currentIndex = index;
+        const imageUrl = this.getAttribute('src');
+        openModal(imageUrl);
+      });
+    });
+
+    // Close the modal when the close button is clicked
+    modalClose.addEventListener('click', closeModal);
+
+    // Show previous image when the previous arrow is clicked
+    modalPrev.addEventListener('click', showPrevImage);
+
+    // Show next image when the next arrow is clicked
+    modalNext.addEventListener('click', showNextImage);
+
+    // Close the modal when clicking outside of the image
+    modal.addEventListener('click', function(event) {
+      if(event.target === modal) {
+        closeModal();
+      }
+    });
+
+    // Close the modal when pressing the Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Navigate through images using arrow keys
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'ArrowLeft') {
+        showPrevImage();
+      } else if (event.key === 'ArrowRight') {
+        showNextImage();
+      }
+    });
+</script>
+<style>
+/* Modal styles */
+/* Modal styles */
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.modal-close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.modal-prev,
+.modal-next {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-prev {
+  left: 20px;
+}
+
+.modal-next {
+  right: 20px;
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    max-width: 95vw;
+    max-height: 95vh;
+  }
+
+  .modal-close {
+    font-size: 25px;
+    padding: 0.4rem;
+  }
+
+  .modal-prev,
+  .modal-next {
+    font-size: 1.5rem;
+    padding: 0.25rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
+  .modal-close {
+    font-size: 28px;
+    padding: 0.45rem;
+  }
+
+  .modal-prev,
+  .modal-next {
+    font-size: 1.8rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .modal-content {
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+
+  .modal-close {
+    font-size: 32px;
+    padding: 0.6rem;
+  }
+
+  .modal-prev,
+  .modal-next {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .modal-content {
+    max-width: 70vw;
+    max-height: 70vh;
+  }
+
+  .modal-close {
+    font-size: 35px;
+    padding: 0.7rem;
+  }
+
+  .modal-prev,
+  .modal-next {
+    font-size: 2.2rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1600px) {
+  .modal-content {
+    max-width: 60vw;
+    max-height: 60vh;
+  }
+
+  .modal-close {
+    font-size: 38px;
+    padding: 0.8rem;
+  }
+
+  .modal-prev,
+  .modal-next {
+    font-size: 2.5rem;
+    padding: 0.7rem;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 2560px) {
+  .modal-content {
+    max-width: 50vw;
+    max-height: 50vh;
+  }
+
+  .modal-close {
+    font-size: 42px;
+    padding: 0.9rem;
+  }
+
+  .modal-prev,
+  .modal-next {
+    font-size: 2.8rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (min-width: 2561px) {
+  .modal-content {
+    max-width: 40vw;
+    max-height: 40vh;
+  }
+
+  .modal-close {
+    font-size: 48px;
+    padding: 1rem;
+  }
+
+  .modal-prev,
+  .modal-next {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+}
+</style>
+<script >
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("updating")
+      // Define the target date
+      const targetDate = new Date('2023-09-29'); // Replace with your target date
+
+      // Get the countdown element
+      const countdownElement = document.querySelector("#__next1 > div > div.css-15378cj > header.css-ou2xl5 > div:nth-child(3)");
+
+      // Update the countdown function
+      function updateCountdown() {
+        // Calculate the number of days remaining
+        const currentDate = new Date();
+        const timeDifference = targetDate.getTime() - currentDate.getTime();
+        const daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
+        // Update the countdown element
+        countdownElement.textContent = `${daysRemaining} Days To Go!`;
+        // hide element
+        countdownElement.style.display = "!none";
+        console.log(countdownElement)
+      }
+
+      // Call the updateCountdown function initially to set the initial value
+      updateCountdown();
+
+      // Call the updateCountdown function every second to update the countdown dynamically
+      setInterval(updateCountdown, 100000);
+    });
 </script>
   <noscript><img
       src="https://www.theknot.com/akam/13/pixel_4cb0167b?a=dD00ZDBmOWRlYzU5Y2EyNTcyMzBiYjc0ZDQyM2U2ZDMzNTkzMmNiMGMyJmpzPW9mZg=="
