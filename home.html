@@ -32,8 +32,11 @@
       // youtubeIframe.setAttribute("style", "margin: 0 auto; display: block;");
       // put iframe within div
       videoContainer.appendChild(youtubeIframe);
-      // insert this iframe before the footer tag
-      document.querySelector("footer").insertAdjacentElement("beforebegin", videoContainer);
+      // insert this as the last element in a div identified with the class StoryItem
+      document.querySelector("#__next > div > div.css-15378cj > div.css-iex2id > div:nth-child(5)").appendChild(videoContainer);
+
+
+      // document.querySelector("footer").insertAdjacentElement("beforebegin", videoContainer);
       
 
 
@@ -73,7 +76,7 @@
   <style>
     .video-container {
       position: relative;
-      max-width: 80%; /* Adjust the maximum width as needed */
+      max-width: 100%; /* Adjust the maximum width as needed */
       max-height: 0;
       padding-bottom: 56.25%;
       margin: 0 auto; /* Centers the container horizontally */
