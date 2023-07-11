@@ -11,7 +11,7 @@
             },
             "GDS_SubEvent:c571256b-58e3-45fb-8181-56eb4a287844": {
                 "__typename": "GDS_SubEvent",
-                "attire": "Formal Or Semi Formal",
+                "attire": "Formal",
                 "endTime": "17:00",
                 "id": "c571256b-58e3-45fb-8181-56eb4a287844",
                 "name": "Ceremony",
@@ -27,7 +27,7 @@
             },
             "GDS_SubEvent:430f3331-a307-4650-8e67-e7bcaf897f93": {
                 "__typename": "GDS_SubEvent",
-                "attire": "Formal / Semi Formal",
+                "attire": "Formal ",
                 "endTime": "22:00",
                 "id": "430f3331-a307-4650-8e67-e7bcaf897f93",
                 "name": "Reception",
@@ -44,7 +44,7 @@
             "GDS_Event:148f6de2-c274-468f-ae91-5c34704f51f6": {
                 "__typename": "GDS_Event",
                 "id": "148f6de2-c274-468f-ae91-5c34704f51f6",
-                "attire": "Formal/ Semi Formal",
+                "attire": "Formal",
                 "endTime": null,
                 "name": "Wedding Day (JKT)",
                 "notes": null,
