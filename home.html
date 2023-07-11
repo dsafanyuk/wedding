@@ -20,6 +20,20 @@
       // change anchor tag that has an href equal to /us/david-safanyuk-and-eunike-olivia-sep-2023/photos
       // document.querySelector("a[href='/photos']").href = "./photos.html";
 
+      var youtubeIframe = document.createElement("iframe");
+      youtubeIframe.setAttribute("width", "560");
+      youtubeIframe.setAttribute("height", "315");
+      youtubeIframe.setAttribute("src", "https://www.youtube.com/embed/s9ElPBdixFo");
+      youtubeIframe.setAttribute("title", "YouTube video player");
+      youtubeIframe.setAttribute("frameborder", "0");
+      youtubeIframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+      youtubeIframe.setAttribute("allowfullscreen", "");
+      youtubeIframe.setAttribute("style", "margin: 0 auto; display: block;");
+
+      // insert this iframe before the footer tag
+      document.querySelector("footer").insertAdjacentElement("beforebegin", youtubeIframe);
+      
+
 
     };
   </script>
