@@ -24,7 +24,7 @@
       videoContainer.setAttribute("class", "video-container");
 
       var youtubeIframe = document.createElement("iframe");
-      youtubeIframe.setAttribute("src", "https://www.youtube.com/embed/s9ElPBdixFo");
+      youtubeIframe.setAttribute("src", "https://www.youtube.com/embed/s9ElPBdixFo?rel=0");
       youtubeIframe.setAttribute("title", "YouTube video player");
       youtubeIframe.setAttribute("frameborder", "0");
       youtubeIframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
@@ -73,7 +73,10 @@
   <style>
     .video-container {
       position: relative;
+      max-width: 80%; /* Adjust the maximum width as needed */
+      max-height: 0;
       padding-bottom: 56.25%;
+      margin: 0 auto; /* Centers the container horizontally */
     }
 
     .video-container iframe {
