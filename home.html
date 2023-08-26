@@ -3,17 +3,13 @@
 <head>
     <script>
         window.onload = function () {
-            var element = document.querySelector('.css-1w5t0sx');
-            if (element) {
-                element.parentNode.removeChild(element);
-            }
             // change anchor tag that has an href equal to /us/david-safanyuk-and-eunike-olivia-sep-2023/photos
             // document.querySelector("a[href='/photos']").href = "./photos.html";
             // create div with class video-container
-            var videoContainer = document.createElement("div");
+            const videoContainer = document.createElement("div");
             videoContainer.setAttribute("class", "video-container");
 
-            var youtubeIframe = document.createElement("iframe");
+            const youtubeIframe = document.createElement("iframe");
             youtubeIframe.setAttribute("src", "https://www.youtube.com/embed/s9ElPBdixFo?rel=0");
             youtubeIframe.setAttribute("title", "YouTube video player");
             youtubeIframe.setAttribute("frameborder", "0");
@@ -67,21 +63,6 @@
 
     <script async id="union-pagelet-browser-modules-script"
             src="https://union.theknot.com/dist/v2/pagelet/latest/browser-modules.js"></script>
-    <script>!function () {
-        var n = [];
-        document.getElementById("union-pagelet-browser-modules-script").addEventListener("load", function () {
-            n.forEach(function (n) {
-                var e = n[0], i = n[1];
-                this[e].apply(this, i)
-            }, window.UNION_INTERNAL_MODULE_SYSTEM), UNION_INTERNAL_MODULE_SYSTEM.requirejs.config({waitSeconds: 15})
-        }), window.UNION_INTERNAL_MODULE_SYSTEM = window.UNION_INTERNAL_MODULE_SYSTEM || {
-            require: function () {
-                n.push(["require", arguments])
-            }, define: function () {
-                n.push(["define", arguments])
-            }
-        }
-    }()</script>
     <style>
         [data-pagelet-render-state=error] ~ [data-pagelet-role=placeholder],
         [data-pagelet-render-state=ready] ~ [data-pagelet-role=placeholder] {
@@ -105,272 +86,6 @@
             height: 100%;
         }
     </style>
-    <script class="ot-sdk-show-settings"
-            id="Union__consent-management__snippet">window.UnionConsentManagement = function () {
-        var n = -1 === document.cookie.indexOf("unionCmpEnabled=false");
-        if (n) {
-            var e = document.createElement("script");
-            e.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js", e.type = "text/javascript", e.charset = "UTF-8", e.async = !0, e.setAttribute("data-domain-script", "98c04d9e-538c-47ab-9820-bad810dce441"), document.head.appendChild(e)
-        } else window.OnetrustActiveGroups = ",C0001,C0002,C0003,C0004,C0005,", window.OneTrust = {
-            ToggleInfoDisplay: function () {
-            }, OnConsentChanged: function () {
-            }
-        };
-        var o = "Necessary", i = "Analytic", r = "Personalisation", a = "Targeting", c = "Social",
-            s = {C0001: o, C0002: i, C0003: r, C0004: a, C0005: c}, t = "not_loaded", d = !1, u = [],
-            f = {"provider-load": []}, l = {};
-
-        function g(n) {
-            var e = C.getConsentedCategories(), t = Object.keys(s).map(function (n) {
-                return s[n]
-            });
-            n.setup({
-                consentedToAll: t.every(function (n) {
-                    return 0 <= e.indexOf(n)
-                }),
-                consentedToAny: t.filter(function (n) {
-                    return n !== o
-                }).some(function (n) {
-                    return 0 <= e.indexOf(n)
-                }),
-                consentedToNecessary: 0 <= e.indexOf(o),
-                consentedToAnalytic: 0 <= e.indexOf(i),
-                consentedToPersonalisation: 0 <= e.indexOf(r),
-                consentedToTargeting: 0 <= e.indexOf(a),
-                consentedToSocial: 0 <= e.indexOf(c),
-                consentedTo: function () {
-                    return Array.prototype.slice.call(arguments).every(function (n) {
-                        return 0 <= e.indexOf(n)
-                    })
-                },
-                categories: e
-            })
-        }
-
-        function p(n, e) {
-            if (n === o || d && C.consentedTo(n)) return e();
-            l[n].push(e)
-        }
-
-        l[o] = [], l[i] = [], l[r] = [], l[a] = [], l[c] = [];
-        var C = {
-            version: "1.0.1", consentPlatformEnabled: n, registerService: function (n) {
-                d && g(n), u.push(n)
-            }, getConsentedCategories: function () {
-                return (window.OnetrustActiveGroups || ",C0001,").split(",").filter(function (n) {
-                    return n && s[n]
-                }).map(function (n) {
-                    return s[n]
-                })
-            }, togglePreferencesModal: function () {
-                t = "changing", OneTrust.ToggleInfoDisplay(), OneTrust.OnConsentChanged(function () {
-                    window.location.reload()
-                })
-            }, addEventListener: function (n, e) {
-                "provider-load" === n && ("provider-load" === n && d ? e() : f[n].push(e))
-            }, removeEventListener: function (n, e) {
-                "provider-load" === n && f[n].splice(f[n].indexOf(e), 1)
-            }, getCookieSettingsButtonText: function () {
-                return OneTrust.GetDomainData().CookieSettingButtonText
-            }, consentedTo: function (n) {
-                return 0 <= C.getConsentedCategories().indexOf(n)
-            }, onConsentedToNecessary: function (n) {
-                return p(o, n)
-            }, onConsentedToAnalytic: function (n) {
-                return p(i, n)
-            }, onConsentedToPersonalisation: function (n) {
-                return p(r, n)
-            }, onConsentedToTargeting: function (n) {
-                return p(a, n)
-            }, onConsentedToSocial: function (n) {
-                return p(c, n)
-            }
-        };
-        return window.OptanonWrapper = function () {
-            var n;
-            d || (d = !0, f["provider-load"].forEach(function (n) {
-                n()
-            })), "loading" !== (t = "not_loaded" === (n = t) ? "loading" : "loading" === n ? "changing" : "done") && "changing" !== t || u.forEach(function (n) {
-                g(n)
-            }), C.getConsentedCategories().forEach(function (n) {
-                l[n].forEach(function (n) {
-                    n()
-                }), l[n] = []
-            })
-        }, n || window.OptanonWrapper(), C
-    }()</script>
-    <script
-            type="text/javascript">!function () {
-        var i = window.analytics = window.analytics || [];
-        if (!i.initialize) if (i.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
-            i.invoked = !0, i.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"], i.factory = function (t) {
-                return function () {
-                    var e = Array.prototype.slice.call(arguments);
-                    return e.unshift(t), i.push(e), i
-                }
-            };
-            for (var e = 0; e < i.methods.length; e++) {
-                var t = i.methods[e];
-                i[t] = i.factory(t)
-            }
-            i.load = function (e, t) {
-                var n = document.createElement("script");
-                n.type = "text/javascript", n.async = !0, n.src = "https://cdn.segment.com/analytics.js/v1/" + e + "/analytics.min.js";
-                var a = document.getElementsByTagName("script")[0];
-                a.parentNode.insertBefore(n, a), i._loadOptions = t
-            }, i._writeKey = "nibq354xak", i.SNIPPET_VERSION = "4.13.2"
-        }
-    }()</script>
-    <script id="Union__fragment_loader">
-        window.UNION_INTERNAL_FRAGMENT_LOADER = ((expirationPeriod, cacheNamespace, window, document, storage, JSON, Date) => {
-            const now = new Date;
-            return
-
-            const createCacheStorage = () => {
-                const getCacheKey = (fragment) => {
-                    return cacheNamespace + fragment.name;
-                };
-
-                const usedKeys = new Set();
-                const unloadEvent = 'onpagehide' in window ? 'pagehide' : 'unload';
-                window.addEventListener(unloadEvent, () => {
-                    Object.keys(storage).forEach((key) => {
-                        if (key.indexOf(cacheNamespace) === 0 && !usedKeys.has(key)) {
-                            storage.removeItem(key);
-                            console.warn('Deleting fragment cache: ', key);
-                        }
-                    });
-                });
-
-                return {
-                    set: (fragment, result) => {
-                        try {
-                            const key = getCacheKey(fragment);
-                            usedKeys.add(key);
-                            storage[key] = JSON.stringify([now, result]);
-                        } catch (error) {
-                            console.warn('Error hydrating fragment cache: ', error);
-                        }
-                    },
-                    get: (fragment) => {
-                        const key = getCacheKey(fragment)
-                        usedKeys.add(key);
-                        return storage[key];
-                    }
-                }
-            }
-
-            const createHTMLFragmentLoader = () => {
-                const cacheStorage = createCacheStorage();
-
-                const performFetch = async (fragment) => {
-                    const response = await fetch(fragment.url)
-                    if (!response.ok) {
-                        console.warn('Unable to fetch fragment', fragment);
-                        return null;
-                    }
-
-                    return await response.text();
-                }
-
-                const performAppend = (fragment, targetElement, text) => {
-                    const domFragment = document.createRange()
-                        .createContextualFragment(
-                            '<!-- fragment start ' + fragment.id + '-->' + text + '<!-- fragment end -->'
-                        );
-                    domFragment.firstChild.id = fragment.id;
-                    targetElement.appendChild(domFragment);
-                }
-
-                const append = (fragment, text) => {
-                    let target = fragment.options.target;
-
-                    if (target !== 'head' && target !== 'body') {
-                        target = 'body';
-                    }
-
-                    const targetElement = document[target];
-
-                    if (target === 'body' && !targetElement) {
-                        document.addEventListener('readystatechange', function () {
-
-                            if (document.readyState === 'interactive')
-                                performAppend(fragment, document.body, text);
-                        });
-                        return;
-                    }
-
-                    performAppend(fragment, targetElement, text);
-                }
-
-                const fetchAppend = async (fragment) => {
-                    const text = await performFetch(fragment)
-                    if (text) {
-                        append(fragment, text);
-                    }
-                    return text;
-                }
-
-                const fetchAppendCache = async (fragment) => {
-                    const text = await fetchAppend(fragment)
-                    if (text)
-                        cacheStorage.set(fragment, text);
-                }
-
-                const fetchCache = async (fragment) => {
-                    const text = await performFetch(fragment)
-                    if (text)
-                        cacheStorage.set(fragment, text);
-                }
-
-                return {
-                    load: async (fragment) => {
-                        if (document.getElementById(fragment.id)) {
-                            console.log(fragment.id + ': Fragment is already in document. Avoiding load cycle.');
-                            return;
-                        }
-
-                        if (!fragment.options.cache) {
-                            return fetchAppend(fragment);
-                        }
-
-                        const cache = cacheStorage.get(fragment);
-
-                        if (!cache) {
-                            return fetchAppendCache(fragment);
-                        }
-
-                        const data = JSON.parse(cache);
-                        const lastUsed = new Date(data[0]);
-
-                        if (lastUsed > now /* Probably an attacker */) {
-                            return fetchAppendCache(fragment);
-                        }
-
-                        append(fragment, data[1]);
-
-                        setTimeout(() => {
-                            const timeSinceLastUsed = now - lastUsed;
-
-                            if (timeSinceLastUsed >= expirationPeriod) {
-                                fetchCache(fragment);
-                            }
-                        });
-                    }
-                }
-            }
-
-            return createHTMLFragmentLoader();
-        })(
-            600000,
-            'xou/fragments/',
-            window,
-            document,
-            window.localStorage,
-            JSON,
-            Date
-        );
-    </script>
     <!-- fragment start Union__fragment__html-document-parts_head -->
     <!--#include virtual="/union-dist/html-document-parts/latest/server/head.html" --><!-- fragment end -->
     <link as="style" href="https://static.theknot.com/wws-guest-view/_next/static/css/30498a168aaec04a.css"
@@ -408,19 +123,6 @@
 <noscript
         data-union-html-insert-start=""></noscript><!-- fragment start Union__fragment__html-document-parts_body -->
 <!--#include virtual="/union-dist/html-document-parts/latest/server/body.html" --><!-- fragment end -->
-<script>window.UNION_INTERNAL_FRAGMENT_LOADER.load({
-    "id": "Union__fragment__html-document-parts_body",
-    "name": "html-document-parts/body",
-    "url": "https://union.theknot.com/dist/v2/html-document-parts/latest/client/body.html",
-    "options": {"cache": true, "target": "body"}
-});
-window.UNION_INTERNAL_FRAGMENT_LOADER.load({
-    "id": "Union__fragment__iconography_latest",
-    "name": "iconography/latest",
-    "url": "https://union.theknot.com/dist/v2/iconography/latest/definitions-fragment.html",
-    "options": {"cache": true, "target": "body"}
-})</script>
-<noscript data-union-html-insert-end=""></noscript>
 <div id="__next1">
     <div class="css-1oteowz">
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&amp;display=swap" media="all"
@@ -483,9 +185,6 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
             <div class="css-xdcd7r"></div>
             <style data-emotion="css 1djtsgn">
                 @media (min-width: 768px) {
-                    .css-1djtsgn {
-                        display: none;
-                    }
                 }
             </style>
             <style data-emotion="css fsfrbf">
@@ -771,14 +470,8 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                 <div class="css-1x6hq4r" data-testid="header-countdown">87 Days To Go!</div>
             </header>
             <style data-emotion="css 1jgbffo">
-                .css-1jgbffo {
-                    display: none;
-                }
 
                 @media (min-width: 768px) {
-                    .css-1jgbffo {
-                        display: block;
-                    }
                 }
             </style>
             <style data-emotion="css ou2xl5">
@@ -1099,10 +792,6 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                         </style>
                         <li class="css-haue6f">
                             <style data-emotion="css tv0uwv">
-                                .css-tv0uwv {
-                                    margin: 0;
-                                    padding: 8px 0;
-                                }
                             </style>
                             <style data-emotion="css 1x9swe2">
                                 .css-1x9swe2 {
@@ -1284,52 +973,14 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
             </style>
             <div class="css-iex2id">
                 <style data-emotion="css d5g1lp">
-                    .css-d5g1lp {
-                        letter-spacing: 2.23px;
-                        line-height: 1.3;
-                        display: -webkit-box;
-                        display: -webkit-flex;
-                        display: -ms-flexbox;
-                        display: flex;
-                        -webkit-flex-direction: column;
-                        -ms-flex-direction: column;
-                        flex-direction: column;
-                        -webkit-box-pack: center;
-                        -ms-flex-pack: center;
-                        -webkit-justify-content: center;
-                        justify-content: center;
-                        margin: 12px auto;
-                        padding: 0 16px;
-                        width: -webkit-fit-content;
-                        width: -moz-fit-content;
-                        width: fit-content;
-                        font-family: EB Garamond;
-                        color: #FFFFFF;
-                        font-size: 38px;
-                        font-weight: normal;
-                        letter-spacing: 3px;
-                        text-transform: uppercase;
-                    }
 
                     @media (min-width: 640px) {
-                        .css-d5g1lp {
-                            -webkit-flex-direction: row;
-                            -ms-flex-direction: row;
-                            flex-direction: row;
-                            margin: 52px auto 20px;
-                        }
                     }
 
                     @media (max-width: 640px) {
-                        .css-d5g1lp {
-                            font-size: calc(38px * 0.75);
-                        }
                     }
 
                     @media (max-width: 640px) {
-                        .css-d5g1lp {
-                            font-size: 1rem;
-                        }
                     }
                 </style>
                 <style data-emotion="css o6iq6k">
@@ -1412,16 +1063,8 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                             text-decoration: underline;
                         }
 
-                        .css-5ab9o6 .ql-align-right {
-                            text-align: right;
-                        }
-
                         .css-5ab9o6 .ql-align-center {
                             text-align: center;
-                        }
-
-                        .css-5ab9o6 .ql-align-justify {
-                            text-align: justify;
                         }
 
                         @media (max-width: 640px) {
@@ -1446,16 +1089,6 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                         <p class="ql-align-center">our wedding to you, our family and friends.</p>
                     </div>
                 </div>
-                <style data-emotion="css r5k1oe">
-                    .css-r5k1oe {
-                        font-weight: normal;
-                        margin: 0 auto;
-                        width: -webkit-fit-content;
-                        width: -moz-fit-content;
-                        width: fit-content;
-                        padding: 0.75rem 1.25rem;
-                    }
-                </style>
                 <style data-emotion="css xtb3p0">
                     .css-xtb3p0 {
                         margin: auto;
@@ -1495,21 +1128,8 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                         </style>
                         <div class="css-15r1rym">
                             <style data-emotion="css utp8va">
-                                .css-utp8va {
-                                    line-height: 1;
-                                    margin: 32px 0 8px 0;
-                                    font-family: EB Garamond;
-                                    color: #FFFFFF;
-                                    font-size: 32px;
-                                    font-weight: normal;
-                                    text-transform: uppercase;
-                                    letter-spacing: 4px;
-                                }
 
                                 @media (max-width: 640px) {
-                                    .css-utp8va {
-                                        font-size: calc(32px * 0.75);
-                                    }
                                 }
                             </style>
 
@@ -1598,33 +1218,14 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                                 </style>
                                 <div class="css-o4mq2x">
                                     <style data-emotion="css mlznvo">
-                                        .css-mlznvo {
-                                            margin: 16px 0;
-                                            font-family: EB Garamond;
-                                            letter-spacing: 3px;
-                                            color: #FFFFFF;
-                                            font-size: 20px;
-                                            font-weight: 500;
-                                            text-transform: uppercase;
-                                            line-height: 22px;
+
+                                        @media (max-width: 640px) {
                                         }
 
                                         @media (max-width: 640px) {
-                                            .css-mlznvo {
-                                                font-size: calc(20px * 0.75);
-                                            }
-                                        }
-
-                                        @media (max-width: 640px) {
-                                            .css-mlznvo {
-                                                font-size: calc(20px * 0.9);
-                                            }
                                         }
 
                                         @media (min-width: 720px) {
-                                            .css-mlznvo {
-                                                display: none;
-                                            }
                                         }
                                     </style>
                                     <style data-emotion="css 1krwkps">
@@ -1675,7 +1276,7 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                                     </style>
                                     <h4 class="css-1krwkps">Friday, September 29th 2023</h4>
                                     <h4 class="css-1krwkps">4:00 PM</h4>
-                                    <h4 class="css-k5b63w">Ceremony</h4>
+                                    <h4 class="css-k5b63w">Holy Matrimony</h4>
                                     <style data-emotion="css 1bpga1p">
                                         .css-1bpga1p {
                                             margin: 12px 0;
@@ -1986,10 +1587,6 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                         </style>
                         <li class="css-haue6f">
                             <style data-emotion="css tv0uwv">
-                                .css-tv0uwv {
-                                    margin: 0;
-                                    padding: 8px 0;
-                                }
                             </style>
                             <style data-emotion="css 1x9swe2">
                                 .css-1x9swe2 {
@@ -2099,242 +1696,39 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                 </div>
             </nav>
             <style>
-                .css-i5u0r2::before,
-                .css-i5u0r2::after {
-                    content: "";
-                    height: 3px;
-                    left: 20%;
-                    margin: -0.15em auto 0px;
-                    border-radius: 3px;
-                    position: absolute;
-                    top: 50%;
-                    transition: all 0.4s ease 0s;
-                    width: 24px;
-                    background: rgb(255, 255, 255);
-                    box-shadow: rgb(255, 255, 255) 0px -10px 0px 0px, rgb(255, 255, 255) 0px 10px 0px 0px;
-                }
-
-                .css-i5u0r2::before {
-                    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-                    transform: rotateZ(-45deg);
-                }
-
-                .css-i5u0r2::after {
-                    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px;
-                    transform: rotateZ(45deg);
-                }
 
 
                 /* Modal styles */
                 /* Modal styles */
-                .modal {
-                    display: none;
-                    align-items: center;
-                    justify-content: center;
-                    position: fixed;
-                    z-index: 9999;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    overflow: auto;
-                }
-
-                .modal.active {
-                    display: flex;
-                }
-
-                .modal-content {
-                    max-width: 90vw;
-                    max-height: 90vh;
-                    margin: 0 auto;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .modal-image {
-                    max-width: 100%;
-                    max-height: 100%;
-                    width: auto;
-                    height: auto;
-                    object-fit: contain;
-                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-                }
-
-                .modal-close {
-                    position: fixed;
-                    top: 20px;
-                    right: 20px;
-                    color: #fff;
-                    font-size: 30px;
-                    cursor: pointer;
-                    z-index: 1;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    padding: 0.5rem;
-                    border-radius: 50%;
-                }
-
-                .modal-prev,
-                .modal-next {
-                    position: absolute;
-                    top: 50%;
-                    color: #fff;
-                    font-size: 24px;
-                    cursor: pointer;
-                    z-index: 1;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    padding: 0.5rem;
-                    border-radius: 50%;
-                    transform: translateY(-50%);
-                }
-
-                .modal-prev {
-                    left: 20px;
-                }
-
-                .modal-next {
-                    right: 20px;
-                }
 
                 @media (max-width: 480px) {
-                    .modal-content {
-                        max-width: 95vw;
-                        max-height: 95vh;
-                    }
 
-                    .modal-close {
-                        font-size: 25px;
-                        padding: 0.4rem;
-                    }
-
-                    .modal-prev,
-                    .modal-next {
-                        font-size: 1.5rem;
-                        padding: 0.25rem;
-                    }
                 }
 
                 @media (min-width: 481px) and (max-width: 768px) {
-                    .modal-content {
-                        max-width: 90vw;
-                        max-height: 90vh;
-                    }
 
-                    .modal-close {
-                        font-size: 28px;
-                        padding: 0.45rem;
-                    }
-
-                    .modal-prev,
-                    .modal-next {
-                        font-size: 1.8rem;
-                        padding: 0.3rem;
-                    }
                 }
 
                 @media (min-width: 769px) and (max-width: 1024px) {
-                    .modal-content {
-                        max-width: 80vw;
-                        max-height: 80vh;
-                    }
 
-                    .modal-close {
-                        font-size: 32px;
-                        padding: 0.6rem;
-                    }
-
-                    .modal-prev,
-                    .modal-next {
-                        font-size: 2rem;
-                        padding: 0.5rem;
-                    }
                 }
 
                 @media (min-width: 1025px) and (max-width: 1366px) {
-                    .modal-content {
-                        max-width: 70vw;
-                        max-height: 70vh;
-                    }
 
-                    .modal-close {
-                        font-size: 35px;
-                        padding: 0.7rem;
-                    }
-
-                    .modal-prev,
-                    .modal-next {
-                        font-size: 2.2rem;
-                        padding: 0.6rem;
-                    }
                 }
 
                 @media (min-width: 1367px) and (max-width: 1600px) {
-                    .modal-content {
-                        max-width: 60vw;
-                        max-height: 60vh;
-                    }
 
-                    .modal-close {
-                        font-size: 38px;
-                        padding: 0.8rem;
-                    }
-
-                    .modal-prev,
-                    .modal-next {
-                        font-size: 2.5rem;
-                        padding: 0.7rem;
-                    }
                 }
 
                 @media (min-width: 1601px) and (max-width: 2560px) {
-                    .modal-content {
-                        max-width: 50vw;
-                        max-height: 50vh;
-                    }
 
-                    .modal-close {
-                        font-size: 42px;
-                        padding: 0.9rem;
-                    }
-
-                    .modal-prev,
-                    .modal-next {
-                        font-size: 2.8rem;
-                        padding: 0.8rem;
-                    }
                 }
 
                 @media (min-width: 2561px) {
-                    .modal-content {
-                        max-width: 40vw;
-                        max-height: 40vh;
-                    }
 
-                    .modal-close {
-                        font-size: 48px;
-                        padding: 1rem;
-                    }
-
-                    .modal-prev,
-                    .modal-next {
-                        font-size: 3rem;
-                        padding: 1rem;
-                    }
                 }
 
-                .css-1atfg69 {
-                    left: 0px;
-                    overflow: hidden;
-                    position: fixed;
-                    top: 0px;
-                    transition: all 0.5s ease 0s;
-                    width: 100%;
-                    z-index: 18;
-                    background-color: rgb(35, 31, 32);
-                    height: 100%;
-                }
             </style>
             <script defer>
                 let on = false;
@@ -2423,29 +1817,6 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                     </style>
                     <div class="css-bz344i">9.29.2023</div>
                 </div>
-                <style data-emotion="css 1w5t0sx">
-                    .css-1w5t0sx {
-                        line-height: 1.75;
-                        font-family: EB Garamond;
-                        letter-spacing: 0px;
-                        color: #FFFFFF;
-                        font-size: 15px;
-                        font-weight: 400;
-                        margin: 12px 0;
-                        text-align: center;
-                    }
-
-                    @media (max-width: 640px) {
-                        .css-1w5t0sx {
-                            font-size: calc(15px * 0.8333);
-                        }
-                    }
-
-                    .css-1w5t0sx a {
-                        -webkit-text-decoration: underline;
-                        text-decoration: underline;
-                    }
-                </style>
             </footer>
         </div>
     </div>
@@ -2467,10 +1838,10 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                         "attire": "Formal",
                         "endTime": "17:00",
                         "id": "c571256b-58e3-45fb-8181-56eb4a287844",
-                        "name": "Ceremony",
+                        "name": "Holy Matrimony",
                         "notes": null,
                         "time": "16:00",
-                        "type": "Ceremony",
+                        "type": "Holy Matrimony",
                         "visible": true,
                         "location": {
                             "__typename": "GDS_Location",
@@ -3590,7 +2961,7 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
 
             // Get the countdown element
             const countdownElement = document.querySelector("#__next1 > div > div.css-15378cj > header.css-ou2xl5 > div:nth-child(3)");
-            const countdownElement2 = document.querySelector("#__next1 > div > div.css-15378cj > header.css-mj00yc > div:nth-child(3");
+            const countdownElement2 = document.querySelector("#__next1 > div > div.css-15378cj > header.css-mj00yc > div:nth-child(3)");
 
             // Update the countdown function
             function updateCountdown() {
@@ -3605,7 +2976,6 @@ window.UNION_INTERNAL_FRAGMENT_LOADER.load({
                 // hide element
                 countdownElement.style.display = "!none";
                 countdownElement2.style.display = "!none";
-                console.log(countdownElement)
             }
 
             // Call the updateCountdown function initially to set the initial value
